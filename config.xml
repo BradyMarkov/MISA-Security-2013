@@ -21,7 +21,7 @@ limitations under the License.
         id="ca.chatham-kent.misa">
 		
     <name>MISA Security</name>
-	
+	<preference name="phonegap-version" value="3.0.0" />
     <content src="index.html"/>
     <author rim:copyright="No Copyright"
             href="http://www.chatham-kent.ca"
