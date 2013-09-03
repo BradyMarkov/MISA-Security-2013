@@ -32,7 +32,8 @@ limitations under the License.
 	<icon src="icons/CK-150.png"/>
     <feature id="blackberry.invoke" required="true" version="1.0.0.0"/>
     <feature id="blackberry.invoke.card" />
+	<feature id="blackberry.sensors" /> 
     <feature id="blackberry.io" required="true" version="1.0.0.0" />
 	<access uri ="*"/>
-	<access subdomains="true" uri="http://intranet.chatham-kent.ca"/>
+
 </widget>

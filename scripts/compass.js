@@ -46,3 +46,21 @@ document.addEventListener('deviceready', function () {
 		alert("Compass error: " + error.code);
 	}, {frequency : 100});
 });
+
+
+// Create a callback to handle each sensor
+function compassCallback(sensor, data) {
+    $("body").trigger("newHeading", Math.round(data.value));
+	
+}
+
+// Start listening to the compass sensor with a delay feedback of 1000 microseconds 
+blackberry.sensors.setOptions("devicecompass", { delay: 1000 });
+   
+// Start the event listener for the sensors callback
+blackberry.event.addEventListener("devicecompass", compassCallback);
+   
+// Set the sensor to work in the background and use batching mode
+blackberry.sensors.setOptions("devicecompass", { background: true, batching: true });
+
+
