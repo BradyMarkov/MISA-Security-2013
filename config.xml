@@ -35,5 +35,5 @@ limitations under the License.
 	<feature id="blackberry.sensors" /> 
     <feature id="blackberry.io" required="true" version="1.0.0.0" />
 	<access uri ="*"/>
-
+	<access uri ="www.chatham-kent.ca"/>
 </widget>

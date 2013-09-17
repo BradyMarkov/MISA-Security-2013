@@ -1,4 +1,5 @@
-﻿// next two lines for JS-Lint
+﻿
+// next two lines for JS-Lint
 //"use strict";
 var $, navigator, alert, document;
 
@@ -11,7 +12,7 @@ var RocknCoder = RocknCoder || {};
 RocknCoder.Compass = (function () {
 	var lastHeading = -1,
 		// cache the jQuery selectors
-		$headText = $("header > h1"),
+		$headText = $("#header"),
 		$compass = $("#compass"),
 		// displays the degree
 		updateHeadingText = function (event, heading) {
@@ -49,18 +50,18 @@ document.addEventListener('deviceready', function () {
 
 
 // Create a callback to handle each sensor
-function compassCallback(sensor, data) {
-    $("body").trigger("newHeading", Math.round(data.value));
+//function compassCallback(sensor, data) {
+ //   $("body").trigger("newHeading", Math.round(data.value));
 	
-}
+//}
 
 // Start listening to the compass sensor with a delay feedback of 1000 microseconds 
-blackberry.sensors.setOptions("devicecompass", { delay: 1000 });
+//blackberry.sensors.setOptions("devicecompass", { delay: 1000 });
    
 // Start the event listener for the sensors callback
-blackberry.event.addEventListener("devicecompass", compassCallback);
+//blackberry.event.addEventListener("devicecompass", compassCallback);
    
 // Set the sensor to work in the background and use batching mode
-blackberry.sensors.setOptions("devicecompass", { background: true, batching: true });
+//blackberry.sensors.setOptions("devicecompass", { background: true, batching: true });
 
 
