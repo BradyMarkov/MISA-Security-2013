@@ -18,7 +18,8 @@ KK: Matt- Feel free to add any items here...
 - localize references
 
 ### Multi-platform Graphics ###
-- icons
+- ~~icons~~
+- icons: rounded border for black bg contrast
 - splash screens
 
 ### UI-Functionality ###
