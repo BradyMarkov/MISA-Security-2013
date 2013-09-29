@@ -19,8 +19,10 @@ KK: Matt- Feel free to add any items here...
 
 ### Multi-platform Graphics ###
 - ~~icons~~
-- icons: rounded border for black bg contrast
-- splash screens
+- ~~icons: rounded border for black bg contrast~~
+- ~~splash screens~~
+* retina + xhdpi filesizes are fairly large- will require testing
+* BB splash behavior unknown- square proportions
 
 ### UI-Functionality ###
 - Google Maps fullscreen

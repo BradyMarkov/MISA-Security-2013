@@ -147,7 +147,8 @@
 
     </div>
 	
-	 <script >
+	 <script>
+	 
 	 	$('ul').listview('refresh');
 		
 		$('#coll').find('div[data-role=collapsible]').collapsible({refresh:true}); 
@@ -156,7 +157,11 @@
 		$('[data-role="content"]').trigger('pagecreate');
 		$('ul').listview('refresh');
 		
-		</script>
+	</script>
+		
+	<script type="text/javascript">
+		app.initialize();
+	</script>
 	
 </body>
 </html>
