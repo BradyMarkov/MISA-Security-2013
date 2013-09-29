@@ -12,8 +12,8 @@ KK: Matt- Feel free to add any items here...
 - Finish TODO
 
 ### Cleanup ###
-- ~config.xml~
-- ~folder structure~
+- ~~config.xml~~
+- ~~folder structure~~
 - update moved library references
 - localize references
 
