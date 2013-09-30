@@ -45,7 +45,16 @@
 	
 		});
 		*/
-		
+
+	
+	/* jQuery.mobile defaults */
+	$(document).bind('mobileinit', function() {
+
+		$.mobile.allowCrossDomainPages = true;
+		// check: $.support.cors (boolean)
+		$.mobile.buttonMarkup.hoverDelay = 50;
+	});
+	
 	// Dynamically add common elements on page creation
 	$(document).on('pagecreate', '[data-role="page"]', function(){
 		
@@ -133,6 +142,7 @@
 		</div>
 		
 		<div data-role="content">
+			<p>[Spotlight carousel placeholder?]</p>
 			<div data-role="collapsible-set">
 				<div data-role="collapsible" data-collapsed="false" data-content-theme="b" data-collapsible="false">
 					<h3>Welcome!</h3>
@@ -145,8 +155,8 @@
 	</div> <!--/Page-Home-->
 
 	<!--Page-Config-->
-	<div data-role="page" id="page-config">
-		<div data-role="content">Config...</div>
+	<div data-role="page" id="page-options">
+		<div data-role="content">Options...</div>
 		<div data-role="footer" data-position="fixed" data-theme="a">
 			<h3><a class="ui-btn-right" data-rel="back" data-role="button">Back</a></h3>
 		</div>
@@ -183,33 +193,151 @@
 					</label>
 				</fieldset>
 			</div>
-			<div class="ui-grid-a">
-				<div class="ui-block-a">Tuesday Oct 22, 2013</div>
-				<div class="ui-block-a">5:00-9:00 PM</div>
-				<div class="ui-block-b">Registration and Service Desk - Atrium</div>
-				<div class="ui-block-a">7:00-9:00 AM
-</div>
-				<div class="ui-block-b">Breakfast - Ballroom
-</div>
-				<div class="ui-block-a">Concurrent Sessions</div>
-			</div>
-
-			<div class="ui-grid-a">
-				<div class="ui-block-a">Concurrent Sessions</div>
-				<div class="ui-block-a">
-				</div>
-				<div class="ui-block-b">
-				</div>
-				<div class="ui-block-a">
-				</div>
-				<div class="ui-block-b">
-				</div>
-			</div>
+			<table id="guide">
+				<tbody>
+					<tr>
+						<td colspan="4">
+							<h4>Tuesday Oct 22, 2013</h4>
+						</td>
+					</tr>
+					<tr>
+						<td>5:00-9:00 PM</td>
+						<td colspan="3">Registration and Service Desk - Atrium</td>
+					</tr>
+					<tr>
+						<td>7:00PM-12:00 AM</td>
+						<td colspan="3">Welcome Reception and Casino Room 1A</td>
+					</tr>
+					<tr>
+						<td colspan="4">
+							<h4>Wednesday Oct 23, 2013</h4>
+						</td>
+					</tr>
+					<tr>
+						<td>8:00-6:30 PM</td>
+						<td colspan="3">Registration and Service Desk - Atrium</td>
+					</tr>
+					<tr>
+						<td>7:00-9:00 AM</td>
+						<td colspan="3">Breakfast - Ballroom</td>
+					</tr>
+					<tr>
+						<td>9:00-9:30 AM</td>
+						<td colspan="3">Welcome and Opening Remarks - Ballroom</td>
+					</tr>
+					<tr>
+						<td>9:30-10:30 AM</td>
+						<td colspan="3">Keynote Speaker: Tom Brennan</td>
+					</tr>
+					<tr>
+						<td>10:30-11:00 AM</td>
+						<td colspan="3">Break and Tradeshow</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td colspan="3">
+							<h4>Concurrent Sessions</h4>
+						</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td>General<br />Track Rm 1A</td>
+						<td>Technical Track<br />Rm 1B</td>
+						<td>Management Track<br />Rm 5</td>
+					</tr>
+					<tr>
+						<td>11:00 AM-Noon</td>
+						<td>Peter MacNeil Risk Mangement: Where is the Information?</td>
+						<td>Toni Buhrke: Stopping Cross Contamination with NAC... The Ultimate Patch!</td>
+						<td>Opheliar Chan: Understanding and Developing a Mature Application Security Program</td>
+					</tr>
+					<tr>
+						<td>Noon-1:30 PM</td>
+						<td colspan="3">Lunch, Keynote Kellman Meghu, Tradeshow</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td colspan="3">
+							<h4>Concurrent Sessions</h4>
+						</td>
+					</tr>
+					<tr>
+						<td>1:30-2:30 PM</td>
+						<td>Eugene Ng: Managed Security Services</td>
+						<td>Nathan Spitse: Enhancing Application Security Mgmt with SIEM</td>
+						<td>Trip to Entegrus Data Centre</td>
+					</tr>
+					<tr>
+						<td>2:30-3:00 PM</td>
+						<td colspan="2">Break and Tradeshow</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td colspan="4">5:00 PM Transportation  departure for RM Auto Restoration</td>
+					</tr>
+					<tr>
+						<td colspan="4">5:30 PM Transportation departure  for Armouries </td>
+					</tr>
+					<tr>
+						<td>5:30-6:30 PM</td>
+						<td colspan="3">Tour of RM Auto Restoration</td>
+					</tr>
+					<tr>
+						<td>5:30-7:00 PM</td>
+						<td colspan="3">Armouries Hospitality and Networking</td>
+					</tr>
+					<tr>
+						<td>7:00-9:00 PM</td>
+						<td colspan="3">Supper and Murder Mystery at Armouries</td>
+					</tr>
+					<tr>
+						<td>9:00-1:00 AM</td>
+						<td colspan="3">Hospitality and Networking</td>
+					</tr>
+					<tr>
+						<td>9:00-1:00 AM</td>
+						<td colspan="3">Shuttle to Hotel from Armouries</td>
+					</tr>
+					<tr>
+						<td colspan="4">
+							<h4>Thursday Oct 24, 2013</h4>
+						</td>
+					</tr>
+					<tr>
+						<td>8:00-Noon</td>
+						<td colspan="3">Registration & Service Desk- Atrium</td>
+					</tr>
+					<tr>
+						<td>8:00-9:00 AM</td>
+						<td colspan="3">Breakfast - Ballroom</td>
+					</tr>
+					<tr>
+						<td>9:00-9:15 AM</td>
+						<td colspan="3">Opening Remarks - Ballroom</td>
+					</tr>
+					<tr>
+						<td>9:15-10:15 AM</td>
+						<td colspan="3">Keynote Speaker: Jimmy Fuda - Apple Inc.</td>
+					</tr>
+					<tr>
+						<td>10:15-11:00 AM</td>
+						<td colspan="3">Break and Tradeshow</td>
+					</tr>
+					<tr>
+						<td>11:00-Noon</td>
+						<td colspan="3">Panel Discussion Smartphone Security - Ballroom</td>
+					</tr>
+					<tr>
+						<td>Noon - 1:30</td>
+						<td colspan="3">Lunch and Closing remarks</td>
+					</tr>
+				</tbody>
+			</table>
 		</div>
 	</div>
 	
-<!--Page=Home-->
-   <div data-role="page" id="Page-Home-old">
+	<!--Page=Home-->
+	<div data-role="page" id="Page-Home-old">
 		<div data-role="footer" data-position="fixed" >
                 <div  id="menu" class="owl-carousel owl-theme">
                     
@@ -237,33 +365,20 @@
 		
     </div>
 	
-	<!--Page-Guide-->
-	<div data-role="page" id="Page-Guide-old">
-		<div data-role="footer" data-position="fixed" data-theme="a">
-			<h3><a class="ui-btn-left" href="#Page-Home" data-role="button">Back</a></h3>
-		</div>
-	
-		<div data-role="footer" data-position="fixed" data-theme="a">
-			<h3><a class="ui-btn-left" href="#Page-Home" data-role="button">Back</a></h3>
-		</div>
-		
-		
-    </div>
-	
 	<!--Page-Map-->
-	<div data-role="page" id="Page-Map">
+	<div data-role="page" id="page-map">
 	
 			<div class="container" id="map-canvas"></div>
 		
 	
 		<div data-role="footer" data-position="fixed" data-theme="a">
-			<h3><a class="ui-btn-left" href="#Page-Home" data-role="button">Back</a></h3>
+			<h3><a class="ui-btn-left" data-icon="arrow-l" href="#Page-Home" data-role="button">Back</a></h3>
 		</div>
 
     </div>
 	
 	<!--Page-Translator-->
-	<div data-role="page" id="Page-Translator">
+	<div data-role="page" id="page-translator">
 		<div data-role="footer" data-position="fixed" data-theme="a">
 			<h3><a class="ui-btn-left" href="#Page-Home" data-role="button">Back</a></h3>
 		</div>
@@ -273,7 +388,7 @@
 	
 	
 	<!--Page-Timer-->
-	<div data-role="page" id="Page-Timer">
+	<div data-role="page" id="page-timer">
 		<div data-role="footer" data-position="fixed" data-theme="a">
 			<h3><a class="ui-btn-left" href="#Page-Home" data-role="button">Back</a></h3>
 		</div>
@@ -281,7 +396,7 @@
     </div>
 	
 	<!--Page-MISA-->
-	<div data-role="page" id="Page-MISA">
+	<div data-role="page" id="page-misa">
 		<div data-role="footer" data-position="fixed" data-theme="a">
 			<h3><a class="ui-btn-left" href="#Page-Home" data-role="button">Back</a></h3>
 		</div>
@@ -289,7 +404,7 @@
     </div>
 	
 	<!--Page-Twitter-->
-	<div data-role="page" id="Page-Twitter">
+	<div data-role="page" id="page-twitter">
 		<div data-role="footer" data-position="fixed" data-theme="a">
 			<h3><a class="ui-btn-left" href="#Page-Home" data-role="button">Back</a></h3>
 		</div>

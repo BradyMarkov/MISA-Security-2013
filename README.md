@@ -27,6 +27,7 @@ KK: Matt- Feel free to add any items here...
 ### UI-Functionality ###
 - ~~panel menu~~
 - ~~panel menu dynamic active state~~
+- program guide track selection
 - Google Maps fullscreen
 - carousel plugin review
 
@@ -39,6 +40,6 @@ KK: Matt- Feel free to add any items here...
 - menu icons
 
 ### Content ###
-- program schedule
+- ~~program schedule~~
 - additional news feeds
 - treasure map POIs
