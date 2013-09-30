@@ -26,7 +26,7 @@ KK: Matt- Feel free to add any items here...
 
 ### UI-Functionality ###
 - ~~panel menu~~
-- panel menu dynamic active state
+- ~~panel menu dynamic active state~~
 - Google Maps fullscreen
 - carousel plugin review
 
