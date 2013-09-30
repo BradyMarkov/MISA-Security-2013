@@ -25,6 +25,8 @@ KK: Matt- Feel free to add any items here...
     * BB splash behavior unknown- square proportions
 
 ### UI-Functionality ###
+- ~~panel menu~~
+- panel menu dynamic active state
 - Google Maps fullscreen
 - carousel plugin review
 
