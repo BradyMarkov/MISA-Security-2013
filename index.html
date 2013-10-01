@@ -18,10 +18,30 @@
 	<script src="js/owl.carousel.js"></script>
 	<!--<script src="js/cordova3.js"></script>-->
 	<!--<script src="js/app.js"></script>-->
-
+	
 	<!-- KK: required for Phonegap Build API access -->
 	<script src="phonegap.js"></script>
-			
+	
+	<!-- KK - gmaps testing -->
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script> 
+    <script>
+		var map;
+		function initialize() {
+		var myLatlng = new google.maps.LatLng(-25.363882,131.044922);
+		  var mapOptions = {
+			zoom: 8,
+			center: myLatlng,
+			mapTypeId: google.maps.MapTypeId.ROADMAP
+		  };
+		  map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+			  
+		  var marker = new google.maps.Marker({ 
+			position: myLatlng,      
+			map: map,      
+			title: 'Misa Conference'  });
+		}
+	</script>
+		
 	<script  type="text/javascript">
 	//Identify the device whether android or ios
 
@@ -46,7 +66,18 @@
 		});
 		*/
 
-	
+			$('#Page-Map').on("pageload", function(){
+			console.log("loading gmaps...")
+			//google.maps.event.addDomListener(window, 'load', initialize);
+			});
+			
+	$(document).on('pageload', '#Page-Map', function(event){
+		console.log("loading gmaps...");
+		google.maps.event.addDomListener(window, 'load', initialize);
+		initialize();
+		console.log("done");
+	});
+			
 	/* jQuery.mobile defaults */
 	$(document).bind('mobileinit', function() {
 
@@ -98,6 +129,61 @@
 		}
 	});
 	*/
+	
+	// Code for toggling table column with radio rather than checkbox
+	$(document).on('pagebeforeshow', '.ui-page', function(){ 
+		alterTablePopup('table-column-toggle', 0);
+		alterTablePopup('table-alt',0);    
+	});
+
+	function alterTablePopup(tableID, showColumnID) {    
+		if($.mobile.activePage.find('#'+tableID).length > 0) {
+			// First unsellect everything, we must trigger click event so table look could change  
+			cleanTableColumns(showColumnID, tableID);
+
+			$(document).on('popupafteropen', '#' + tableID + '-popup',function(event, ui) {
+				var popup = $(this);        
+
+				//Hide old fieldset
+				popup.find('fieldset').hide();
+				$.mobile.activePage.find('#radio-fieldset').remove();
+
+				$('<fieldset>').attr({'data-role':'controlgroup','id':'radio-fieldset'}).appendTo(popup);
+				popup.find('input').each(function(i){            
+					(i === showColumnID) ?   $('<input>').attr({'name': tableID+'-radio','id': tableID+'-radio-'+i,'type':'radio','value':'v'+i,'checked':'checked','class':tableID+'-radio'}).appendTo('#radio-fieldset') :  $('<input>').attr({'name':tableID+'-radio','id':tableID+'-radio-'+i,'type':'radio','value':'v'+i}).appendTo('#' + tableID + '-popup #radio-fieldset');           
+
+					$('<label>').attr({'for':tableID+'-radio-'+i}).text($(this).prev().find('.ui-btn-text').text()).appendTo('#' + tableID + '-popup #radio-fieldset'); 
+				}); 
+				$('[type="radio"]').checkboxradio();
+				$.mobile.activePage.trigger('create');
+			}); 
+
+			$(document).on('popupafterclose', '#' + tableID + '-popup',function(event, ui) {
+				var popup = $(this);  
+
+				$.mobile.activePage.find('#radio-fieldset').remove();
+				popup.find('fieldset').show();        
+			});
+
+			$(document).on('vmouseup', '#' + tableID + '-popup #radio-fieldset .ui-controlgroup-controls .ui-radio', function(e){ 
+				if(e.handled !== true) // This will prevent event triggering more then once
+				{        
+					var selectedRadio = $(this).find('[type="radio"]').attr('id').replace(tableID+"-radio-","");
+					cleanTableColumns(selectedRadio, tableID);
+					e.handled = true;
+				}    
+			});     
+		}
+	} 
+
+	function cleanTableColumns(columnNo, tableID){
+		$('#' + tableID + '-popup').find('.ui-checkbox label').each(function(i){
+			($(this).hasClass('ui-checkbox-on')) ? $(this).trigger('vclick') : ''; // Unselect every selected field
+			(i == columnNo) ? $(this).trigger('vclick') : ''; // select first for further use       
+		});  
+	}
+	
+	// /column toggle code
 
 	</script>
 	
@@ -110,7 +196,7 @@
 	
 	/* Generic Overrides */
 	.ui-header .ui-title, .ui-footer .ui-title {
-		/*margin: .6em 15% .8em;*/
+		margin: .6em 15% .8em;
 	}
 	
 	/* disable text highlighting */
@@ -124,6 +210,13 @@
 	}
 	
 	body { background-color: #000; };
+	
+	/* potential panel flicker fix */
+	.ui-panel-animate.ui-panel-content-wrap > .ui-content,
+	.ui-panel-animate.ui-panel-content-wrap > .ui-footer  {
+		-webkit-backface-visibility: hidden;
+		-webkit-transform: translate3d(0,0,0);
+	}
 	</style>
 	
 </head>
@@ -133,11 +226,14 @@
 	<div data-role="page" id="page-home" data-theme="b" >
 		
 		<div data-role="header" data-position="fixed">
+			<!--
 			<a data-role="button" href="#panel-menu" data-icon="bars" data-iconpos="left">
 				Menu
 			</a>
+			-->
+			<a href="#panel-menu" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Menu</a>
 			<h1>
-				MISA Security 2013
+				MISA Security Conference 2013
 			</h1>
 		</div>
 		
@@ -193,7 +289,7 @@
 					</label>
 				</fieldset>
 			</div>
-			<table id="guide">
+			<table id="guide" class="table-stroke">
 				<tbody>
 					<tr>
 						<td colspan="4">

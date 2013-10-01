@@ -9,7 +9,7 @@ This app is the portable MISA Security Conference 2013 program Guide and Map.
 KK: Matt- Feel free to add any items here...
 
 ### General ###
-- Finish TODO
+- ~~Finish TODO~~
 
 ### Cleanup ###
 - ~~config.xml~~
@@ -22,7 +22,7 @@ KK: Matt- Feel free to add any items here...
 - ~~icons: rounded border for black bg contrast~~
 - ~~splash screens~~
     * retina + xhdpi filesizes are fairly large- will require testing
-    * BB splash behavior unknown- square proportions
+    * BB splash behavior unknown- strange proportions
 
 ### UI-Functionality ###
 - ~~panel menu~~
@@ -30,6 +30,7 @@ KK: Matt- Feel free to add any items here...
 - program guide track selection
 - Google Maps fullscreen
 - carousel plugin review
+- localstorage to store page-specfic history
 
 ### UI-Graphics ###
 - compass graphic

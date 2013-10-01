@@ -25,6 +25,11 @@
 		body, div[data-role="page"], div[data-role="content"], .swipeArea {
                 height: 100%;
                            }
+		#map-canvas {
+			position: absolute;
+			width:100%;
+			height:100%;
+			}
 	</style>	
 	
 	<script src="local:///chrome/webworks.js" type="text/javascript"></script>
@@ -56,8 +61,31 @@
 			map: map,      
 			title: 'Misa Conference'  });
 		}
+		
 
-		google.maps.event.addDomListener(window, 'load', initialize);
+		/*
+		$('#Page-Map').on("pageload", function(){
+			console.log("loading gmaps...");
+			google.maps.event.addDomListener(window, 'load', initialize);
+			});
+		*/
+		
+			
+		var map;
+		function initialize() {
+		var myLatlng = new google.maps.LatLng(-25.363882,131.044922);
+		  var mapOptions = {
+			zoom: 8,
+			center: myLatlng,
+			mapTypeId: google.maps.MapTypeId.ROADMAP
+		  };
+		  map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+			  
+		  var marker = new google.maps.Marker({ 
+			position: myLatlng,      
+			map: map,      
+			title: 'Misa Conference'  });
+		}
 
     </script>	
 </head>
@@ -67,7 +95,7 @@
 	<!--Page-Map-->
 	<div data-role="page" id="Page-Map">
 	
-		<div class="container" data-role="content"  id="map-canvas">asdfsda</div>
+		<div class="container" data-role="content"  id="map-canvas"></div>
 		
 	
 		<div data-role="footer" data-position="fixed" data-theme="a">
