@@ -42,5 +42,6 @@ KK: Matt- Feel free to add any items here...
 
 ### Content ###
 - ~~program schedule~~
+- speaker BIO's
 - additional news feeds
 - treasure map POIs
