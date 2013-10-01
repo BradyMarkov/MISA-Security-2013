@@ -1,27 +1,32 @@
 <!DOCTYPE html>
-<!--
-* Copyright 2012 Research In Motion Limited.
-*
-* Licensed under the Apache License, Version 2.0 (the "License");
-* you may not use this file except in compliance with the License.
-* You may obtain a copy of the License at
-*
-*     http://www.apache.org/licenses/LICENSE-2.0
-*
-* Unless required by applicable law or agreed to in writing, software
-* distributed under the License is distributed on an "AS IS" BASIS,
-* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-* See the License for the specific language governing permissions and
-* limitations under the License.
--->
+
 <html>
 <head>
 
+	
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+	<!--<link rel="stylesheet" href="themes/ck-misa-app/ck-misa-app.min.css" />-->
+	<link rel="stylesheet" href="themes/default/jquery.mobile.theme-1.3.2.min.css" />
+	<link rel="stylesheet" href="css/jquery.mobile.structure-1.3.2.min.css" />
+	<link rel="stylesheet" href="css/owl.carousel.css">
+	<link rel="stylesheet" href="css/owl.theme.css">
 	<link rel="stylesheet" href="css/style.css">
-	<style>
+
+	<!--<script src="local:///chrome/webworks.js" type="text/javascript"></script>-->
+	<script src="js/jquery-1.9.1.min.js"></script>
+	<script src="js/jquery.mobile-1.3.2.min.js"></script>  
+	<script src="js/owl.carousel.js"></script>
+	<!--<script src="js/cordova3.js"></script>-->
+	<!--<script src="js/app.js"></script>-->
+	
+	<!-- KK: required for Phonegap Build API access -->
+	<script src="phonegap.js"></script>
+		
+	<!--MP -Created appload.js to store commom js to call on other pages-->
+	<script src="js/appload.js"></script>
+
+	<!--<style>
 		body, div[data-role="page"], div[data-role="content"], .swipeArea {
                 height: 100%;
                            }
@@ -30,20 +35,10 @@
 			width:100%;
 			height:100%;
 			}
-	</style>	
+	</style>-->
 	
-	<script src="local:///chrome/webworks.js" type="text/javascript"></script>
-	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-	<script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>  
-
-
 			
-	<script  type="text/javascript">
-		$(document).on("mobileinit", function(){
-			$.mobile.defaultPageTransition  = 'slide';
-		});
-	
-	</script>
+	<!-- KK - gmaps testing -->
 	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script> 
     <script>
 		var map;
@@ -61,46 +56,30 @@
 			map: map,      
 			title: 'Misa Conference'  });
 		}
-		
+	</script>	
 
-		/*
-		$('#Page-Map').on("pageload", function(){
-			console.log("loading gmaps...");
-			google.maps.event.addDomListener(window, 'load', initialize);
-			});
-		*/
-		
-			
-		var map;
-		function initialize() {
-		var myLatlng = new google.maps.LatLng(-25.363882,131.044922);
-		  var mapOptions = {
-			zoom: 8,
-			center: myLatlng,
-			mapTypeId: google.maps.MapTypeId.ROADMAP
-		  };
-		  map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
-			  
-		  var marker = new google.maps.Marker({ 
-			position: myLatlng,      
-			map: map,      
-			title: 'Misa Conference'  });
-		}
 
-    </script>	
+
 </head>
 <body>
 
 	
 	<!--Page-Map-->
 	<div data-role="page" id="Page-Map">
-	
+		
+			<div data-theme="a" data-role="header">
+			<a data-role="button" href="#panel-menu" data-icon="bars" data-iconpos="left">
+				Menu
+			</a>
+			<h3>
+				Map
+			</h3>
+		</div>
+		
 		<div class="container" data-role="content"  id="map-canvas"></div>
 		
 	
-		<div data-role="footer" data-position="fixed" data-theme="a">
-			<h3><a class="ui-btn-left" id="a.back"  data-role="button" onclick="parent.history.back();">Back</a></h3>
-		</div>
+		
 
     </div>
 	
