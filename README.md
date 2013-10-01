@@ -4,6 +4,15 @@ MISA Security 2013
 This app is the portable MISA Security Conference 2013 program Guide and Map.
 
 
+http://MisaSecurity2013.chatham-kent.ca
+
+Using Sparkle http://sparkleshare.org/ the git repo is sync with the Web Site, all commits will upload to the server.
+Have not tested the time it take it seem pretty quick.
+
+I rearranged the page content into separate pages so that we can easily have another person update the content portions.
+For example we can setup a simple Content Management which allows another person to update the program.
+
+
 ##TODO##
 
 KK: Matt- Feel free to add any items here...
