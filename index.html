@@ -22,25 +22,6 @@
 	<!-- KK: required for Phonegap Build API access -->
 	<script src="phonegap.js"></script>
 	
-	<!-- KK - gmaps testing -->
-	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script> 
-    <script>
-		var map;
-		function initialize() {
-		var myLatlng = new google.maps.LatLng(-25.363882,131.044922);
-		  var mapOptions = {
-			zoom: 8,
-			center: myLatlng,
-			mapTypeId: google.maps.MapTypeId.ROADMAP
-		  };
-		  map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
-			  
-		  var marker = new google.maps.Marker({ 
-			position: myLatlng,      
-			map: map,      
-			title: 'Misa Conference'  });
-		}
-	</script>
 		
 	
 	<!--MP -Created appload.js to store commom js to call on other pages-->
