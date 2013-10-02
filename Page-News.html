@@ -56,7 +56,7 @@
 		
 	 $(document).ready(function () {
 	   $('#RSS1').rssfeed('http://feeds.reuters.com/reuters/oddlyEnoughNews', {
-		 linktarget; '_blank';
+		 linktarget: '_blank';
 		 limit: offset
 	   });
 	 });
@@ -64,6 +64,7 @@
 	 function Next(item, offset){
 		$(item).rssfeed(url, {
 			 limit: offset,
+			 linktarget: '_blank';
 			 snippet: false,
 			 offset: offset
 		});
