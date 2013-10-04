@@ -43,8 +43,7 @@
 		
 		
 		<div data-role="content" style="padding: 10px 0;">
-			<div id="compasscontainer" ><img id="compass" class="Center" src="img/compass320.png" /></div>
-		</div>
+			<div id="compasscontainer" ><img id="compass" class="Center1" src="img/compass320.png" /></div>
 		<!--<script src="js/compass.js"></script>-->
 		<div id="heading">Waiting for heading...</div>
 		<button onclick="startWatch();">Start Watching</button>
@@ -64,7 +63,6 @@
     function onDeviceReady() {
         startWatch();
     }
-
     // Start watching the compass
     //
     function startWatch() {
@@ -89,6 +87,11 @@
     function onSuccess(heading) {
         var element = document.getElementById('heading');
         element.innerHTML = 'Heading: ' + heading.magneticHeading;
+		//console.log(heading.magneticHeading);
+		var rotation = 360 - heading,
+		rotateDeg = 'rotate(' + rotation + 'deg)';
+		// TODO: fix - this code only works on webkit browsers, not wp7
+		$('#compass').css('-webkit-transform', rotateDeg);
     }
 
     // onError: Failed to get the heading
@@ -100,6 +103,7 @@
 		</script>
 	
     </div>
+	</div>
 	
 	
 	
