@@ -66,7 +66,7 @@
     <preference name="phonegap-version"           value="2.9.0" />          <!-- all: current version of PhoneGap -->
     <preference name="orientation"                value="portrait" />        <!-- all: default means both landscape and portrait are enabled -->
     <preference name="target-device"              value="universal" />      <!-- all: possible values handset, tablet, or universal -->
-    <preference name="fullscreen"                 value="false" />           <!-- all: hides the status bar at the top of the screen -->
+    <preference name="fullscreen"                 value="true" />           <!-- all: hides the status bar at the top of the screen -->
     <preference name="webviewbounce"              value="true" />           <!-- ios: control whether the screen 'bounces' when scrolled beyond the top -->
     <preference name="prerendered-icon"           value="true" />           <!-- ios: if icon is prerendered, iOS will not apply it's gloss to the app's icon on the user's home screen -->
     <preference name="stay-in-webview"            value="false" />          <!-- ios: external links should open in the default browser, 'true' would use the webview the app lives in -->
@@ -99,6 +99,7 @@
     <icon src="res/icon/ios/icon-72-2x.png"         gap:platform="ios"        width="144" height="144" />
 
     <!-- Define app splash screen for each platform. -->
+<!-- KK: temp removed for package size testing
 	<gap:splash src="res/screen/android/screen-ldpi-portrait.png"  gap:platform="android" gap:density="ldpi" />
     <gap:splash src="res/screen/android/screen-mdpi-portrait.png"  gap:platform="android" gap:density="mdpi" />
     <gap:splash src="res/screen/android/screen-hdpi-portrait.png"  gap:platform="android" gap:density="hdpi" />
@@ -108,7 +109,7 @@
     <gap:splash src="res/screen/ios/screen-iphone-portrait-2x.png" gap:platform="ios"     width="640" height="960" />
     <gap:splash src="res/screen/ios/screen-ipad-portrait.png"      gap:platform="ios"     width="768" height="1024" />
     <gap:splash src="res/screen/ios/screen-ipad-landscape.png"     gap:platform="ios"     width="1024" height="768" />
-
+-->
 	<!-- Specify target build platforms -->
 	<!-- KK: Added for testing only, comment out to build for all supported platforms -->
 	<gap:platform name="android" />
@@ -126,16 +127,23 @@
 
         Otherwise, you can specify specific domains:
     -->
+	
+	<!-- KK: testing
     <access origin="http://127.0.0.1*"/> <!-- allow local pages -->
+	
     <!--
         <access origin="http://phonegap.com" />                    - allow any secure requests to http://phonegap.com/
         <access origin="http://phonegap.com" subdomains="true" />  - same as above, but including subdomains, such as http://build.phonegap.com/
         <access origin="http://phonegap.com" browserOnly="true" /> - only allows http://phonegap.com to be opened by the child browser.
     -->
 	
-	<access origin="*.chatham-kent.ca"/>
+	<!-- KK: testing
+	<access origin="http://chatham-kent.ca" subdomains="true" />
+    <access origin="http://phonegap.com" subdomains="true" />  
 	<access origin="*.google.com"/>
 	<access origin="*.googleapis.com"/>
 	<access origin="*.gstatic.com"/>
+	-->
+	<access origin="*" />
 
 </widget>

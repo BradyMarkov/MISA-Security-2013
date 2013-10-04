@@ -1,0 +1,81 @@
+<html>
+<head></head>
+<body>
+<!--Page-Guide -->
+	<div data-role="page" id="page-compass-test">
+	
+		<div data-theme="a" data-role="header">
+			<a data-role="button" href="#panel-menu" data-icon="bars" data-iconpos="left">
+				Menu
+			</a>
+			<h3>
+				Compass Test
+			</h3>
+		</div>
+
+		<div data-role="content">
+
+		<script type="text/javascript" charset="utf-8">
+		
+			 // The watch id references the current `watchHeading`
+		var watchID = null;
+
+		// Wait for PhoneGap to load
+		//
+		//document.addEventListener("deviceready", onDeviceReady, false);
+
+		// PhoneGap is ready
+		//
+		/*
+		function onDeviceReady() {
+			startWatch();
+		}
+		*/
+		// Start watching the compass
+		//
+		function startWatch() {
+
+			// Update compass every 3 seconds
+			var options = { frequency: 100 };
+
+			watchID = navigator.compass.watchHeading(onSuccess, onError, options);
+		}
+
+		// Stop watching the compass
+		//
+		function stopWatch() {
+			if (watchID) {
+				navigator.compass.clearWatch(watchID);
+				watchID = null;
+			}
+		}
+
+		// onSuccess: Get the current heading
+		//
+		function onSuccess(heading) {
+			var element = $('#heading');
+			element.innerHTML = 'Heading: ' + heading.magneticHeading;
+			//console.log(heading.magneticHeading);
+			var rotation = 360 - Math.round(heading.magneticHeading),
+			rotateDeg = 'rotate(' + rotation + 'deg)';
+			// TODO: fix - this code only works on webkit browsers, not wp7
+			$('#compass').css('-webkit-transform', rotateDeg);
+		}
+
+		// onError: Failed to get the heading
+		//
+		function onError(compassError) {
+			alert('Compass error: ' + compassError.code);
+		}
+			
+		</script>
+		
+	<!--<script src="js/compass.js"></script>-->
+		<div id="heading">Waiting for heading...</div>
+		<button onclick="startWatch();">Start Watching</button>
+		<button onclick="stopWatch();">Stop Watching</button>	
+		<div id="compasscontainer" ><img id="compass" class="Center" src="img/compass320.png" /></div>
+
+	</div>
+	</body>
+</html>

@@ -15,16 +15,11 @@ For example we can setup a simple Content Management which allows another person
 
 ##TODO##
 
-KK: Matt- Feel free to add any items here...
-
-### General ###
-- ~~Finish TODO~~
-
 ### Cleanup ###
 - ~~config.xml~~
 - ~~folder structure~~
-- update moved library references
-- localize references
+- ~~update moved library references~~
+- ~~localize references~~
 
 ### Multi-platform Graphics ###
 - ~~icons~~
@@ -32,6 +27,7 @@ KK: Matt- Feel free to add any items here...
 - ~~splash screens~~
     * retina + xhdpi filesizes are fairly large- will require testing
     * BB splash behavior unknown- strange proportions
+	* (temp removed splash screens due to package size- see issues)
 
 ### UI-Functionality ###
 - ~~panel menu~~

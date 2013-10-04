@@ -21,7 +21,45 @@
 	
 		});
 		*/
+		
+	/* jQuery.mobile init defaults */
+	$(document).bind('mobileinit', function() {
 
+		// allow external cross-domain pages
+		$.mobile.allowCrossDomainPages = true;
+		
+		// check: $.support.cors (boolean)
+		$.mobile.buttonMarkup.hoverDelay = 50;
+		
+		// Recommended for jQM/Phonegap setup
+		$.mobile.pushStateEnabled = false;
+		
+		// modify default error message/theme
+		$.mobile.pageLoadErrorMessage = "Sorry, there was an error loading the page!";
+		$.mobile.pageLoadErrorMessageTheme = "a";
+		
+		// default page transition
+		$.mobile.defaultPageTransition  = 'flow';
+				
+	});
+
+	// Wait for device API libraries to load
+    //
+    function onLoad() {
+        document.addEventListener("deviceready", onDeviceReady, false);
+    }
+    // device APIs are available
+    //
+    function onDeviceReady() {
+        // Now safe to use device APIs
+		
+		// bind menu button (Android/BB)
+		document.addEventListener("menubutton", function(){
+				//console.log('menu button pressed');
+				$('#panel-menu').panel( "toggle" );
+			}, false);
+    }
+			
 	$('#Page-Map').on("pageload", function(){
 		console.log("loading gmaps...")
 		//google.maps.event.addDomListener(window, 'load', initialize);
@@ -33,14 +71,6 @@
 		google.maps.event.addDomListener(window, 'load', initialize);
 		initialize();
 		console.log("done");
-	});
-			
-	/* jQuery.mobile defaults */
-	$(document).bind('mobileinit', function() {
-
-		$.mobile.allowCrossDomainPages = true;
-		// check: $.support.cors (boolean)
-		$.mobile.buttonMarkup.hoverDelay = 50;
 	});
 	
 	// Dynamically add common elements on page creation
@@ -64,6 +94,8 @@
 	
 				
 	// Swipe right to open panel
+	/*
+	KK: disabled to improve performance on older devices
 	$(document).on('pageinit', function() {
 		$(document).on('swiperight', function( e ) {
 			// check if panel is open, open panel
@@ -73,6 +105,7 @@
 		});
 		
 	});
+	*/
 	
 	/* KK: not working on phone
 	// Back button closes panel
