@@ -41,16 +41,17 @@
 	});
 
 
-	// PhoneGap API device ready
-	document.addEventListener("deviceready", onDeviceReady, false);
-	function onDeviceReady() {
+    // device APIs are available
+    //
+    function onDeviceReady() {
+        // Now safe to use device APIs
+		
 		// bind menu button (Android/BB)
 		document.addEventListener("menubutton", function(){
 				console.log('menu button pressed');
 				$('#panel-menu').panel( "toggle" );
 			}, false);
-	}
-			
+    }
 			
 	$('#Page-Map').on("pageload", function(){
 		console.log("loading gmaps...")
