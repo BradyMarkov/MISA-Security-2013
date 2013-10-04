@@ -49,7 +49,7 @@
 	$(document).on('pagecreate', '[data-role="page"]', function(){
 		
 		// add panel menu
-		$('<div>').attr({'id':'panel-menu','data-role':'panel','data-display':'overlay'}).load("inc/panel-menu.html", function(){
+		$('<div>').attr({'id':'panel-menu','data-role':'panel','data-display':'push'}).load("inc/panel-menu.html", function(){
 			$(this).trigger('create');
 		}).appendTo($(this));
 		

@@ -88,7 +88,7 @@
         var element = document.getElementById('heading');
         element.innerHTML = 'Heading: ' + heading.magneticHeading;
 		//console.log(heading.magneticHeading);
-		var rotation = 360 - heading,
+		var rotation = 360 - Math.round(heading.magneticHeading),
 		rotateDeg = 'rotate(' + rotation + 'deg)';
 		// TODO: fix - this code only works on webkit browsers, not wp7
 		$('#compass').css('-webkit-transform', rotateDeg);
