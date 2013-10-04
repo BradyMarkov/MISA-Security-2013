@@ -10,7 +10,7 @@ function initialize() {
 		Lat = 42.405207;
 		Lng = -82.188721;
 		title= "Chatham, Chatham-Kent ON";
-		zoom=8
+		zoom=8;
 	}
 
 	 
@@ -18,7 +18,7 @@ function initialize() {
 	
        var mapOptions = {          
 		center: myLatlng, 
-		zoom: 8, 
+		zoom: zoom, 
 		mapTypeId: google.maps.MapTypeId.ROADMAP
 	   };       
 	   var map = new google.maps.Map(document.getElementById("map-canvas"),mapOptions);
