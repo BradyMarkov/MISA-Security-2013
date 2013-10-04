@@ -55,7 +55,7 @@
 		
 		// bind menu button (Android/BB)
 		document.addEventListener("menubutton", function(){
-				console.log('menu button pressed');
+				//console.log('menu button pressed');
 				$('#panel-menu').panel( "toggle" );
 			}, false);
     }
