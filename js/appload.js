@@ -36,11 +36,13 @@
 	});
 			
 	/* jQuery.mobile defaults */
-	$(document).bind('mobileinit', function() {
+	$(document).on('mobileinit', function() {
 
 		$.mobile.allowCrossDomainPages = true;
 		// check: $.support.cors (boolean)
 		$.mobile.buttonMarkup.hoverDelay = 50;
+		// Recommended for jQM/Phonegap setup
+		$.mobile.pushStateEnabled = false;
 	});
 	
 	// Dynamically add common elements on page creation
