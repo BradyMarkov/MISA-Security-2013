@@ -4,13 +4,14 @@ function initialize() {
 	 Lat = $.getParamValue('lat');
 	 Lng = $.getParamValue('lng');
 	 title= $.getParamValue('title');
-	 zoom=$.getParamValue('zoom');
+	 zoom = $.getParamValue('zoom');
+	 zoom=parseInt(zoom);
 	 
-	if (Lat == '' || Lat== '' ||title=='' ){
+	if (Lat == '' || Lat== '' || title=='' || zoom=='' ){
 		Lat = 42.405207;
 		Lng = -82.188721;
 		title= "Chatham, Chatham-Kent ON";
-		zoom=8;
+		zoom = 8;
 	}
 
 	 
@@ -18,7 +19,7 @@ function initialize() {
 	
        var mapOptions = {          
 		center: myLatlng, 
-		zoom: Integer.parseInt(zoom), 
+		zoom: zoom, 
 		mapTypeId: google.maps.MapTypeId.ROADMAP
 	   };       
 	   var map = new google.maps.Map(document.getElementById("map-canvas"),mapOptions);
