@@ -66,6 +66,8 @@
 	
 				
 	// Swipe right to open panel
+	/*
+	KK: disabled to improve performance on older devices
 	$(document).on('pageinit', function() {
 		$(document).on('swiperight', function( e ) {
 			// check if panel is open, open panel
@@ -75,6 +77,7 @@
 		});
 		
 	});
+	*/
 	
 	/* KK: not working on phone
 	// Back button closes panel
