@@ -134,7 +134,7 @@
     -->
 	
 	<access origin="*.chatham-kent.ca"/>
-	<access origin="http://chatham-kent.ca" subdeomains="true" />
+	<access origin="http://chatham-kent.ca" subdomains="true" />
 	<access origin="*.google.com"/>
 	<access origin="*.googleapis.com"/>
 	<access origin="*.gstatic.com"/>
