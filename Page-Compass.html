@@ -42,10 +42,62 @@
 		</div>
 		
 		
-		<section data-role="content" style="padding: 10px 0;">
+		<div data-role="content" style="padding: 10px 0;">
 			<div id="compasscontainer" ><img id="compass" class="Center" src="img/compass320.png" /></div>
-		</section>
-		<script src="js/compass.js"></script>
+		</div>
+		<!--<script src="js/compass.js"></script>-->
+		<div id="heading">Waiting for heading...</div>
+		<button onclick="startWatch();">Start Watching</button>
+		<button onclick="stopWatch();">Stop Watching</button>
+		
+		<script>
+		
+			 // The watch id references the current `watchHeading`
+    var watchID = null;
+
+    // Wait for PhoneGap to load
+    //
+    document.addEventListener("deviceready", onDeviceReady, false);
+
+    // PhoneGap is ready
+    //
+    function onDeviceReady() {
+        startWatch();
+    }
+
+    // Start watching the compass
+    //
+    function startWatch() {
+
+        // Update compass every 3 seconds
+        var options = { frequency: 3000 };
+
+        watchID = navigator.compass.watchHeading(onSuccess, onError, options);
+    }
+
+    // Stop watching the compass
+    //
+    function stopWatch() {
+        if (watchID) {
+            navigator.compass.clearWatch(watchID);
+            watchID = null;
+        }
+    }
+
+    // onSuccess: Get the current heading
+    //
+    function onSuccess(heading) {
+        var element = document.getElementById('heading');
+        element.innerHTML = 'Heading: ' + heading.magneticHeading;
+    }
+
+    // onError: Failed to get the heading
+    //
+    function onError(compassError) {
+        alert('Compass error: ' + compassError.code);
+    }
+		
+		</script>
 	
     </div>
 	
