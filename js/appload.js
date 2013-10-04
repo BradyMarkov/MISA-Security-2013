@@ -36,7 +36,7 @@
 	});
 			
 	/* jQuery.mobile defaults */
-	$(document).on('mobileinit', function() {
+	$(document).bind('mobileinit', function() {
 
 		$.mobile.allowCrossDomainPages = true;
 		// check: $.support.cors (boolean)
