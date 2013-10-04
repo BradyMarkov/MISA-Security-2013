@@ -43,6 +43,11 @@
 		$.mobile.buttonMarkup.hoverDelay = 50;
 		// Recommended for jQM/Phonegap setup
 		$.mobile.pushStateEnabled = false;
+		
+		// bind menu button (Android/BB)
+		document.addEventListener("menubutton", function(){
+				$('#panel-menu').panel( "toggle" )
+			}, false);
 	});
 	
 	// Dynamically add common elements on page creation
