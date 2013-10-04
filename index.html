@@ -6,8 +6,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!--<link rel="stylesheet" href="themes/ck-misa-app/ck-misa-app.min.css" />-->
+	<!--
 	<link rel="stylesheet" href="themes/default/jquery.mobile.theme-1.3.2.min.css" />
 	<link rel="stylesheet" href="css/jquery.mobile.structure-1.3.2.min.css" />
+	-->
+	<!-- KK: testing jQM v1.4 -->
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.0-beta.1/jquery.mobile-1.4.0-beta.1.min.css" />
+	
 	<link rel="stylesheet" href="css/owl.carousel.css">
 	<link rel="stylesheet" href="css/owl.theme.css">
 	<link rel="stylesheet" href="css/style.css">
@@ -23,7 +28,9 @@
 
 	<!-- KK: moved to after init scripts so that "mobileinit" will bind
 		properly without having to defer manually -->
-	<script src="js/jquery.mobile-1.3.2.min.js"></script>  
+	<!--<script src="js/jquery.mobile-1.3.2.min.js"></script>-->
+	<!-- KK: testing jQM v1.4 -->
+	<script src="http://code.jquery.com/mobile/1.4.0-beta.1/jquery.mobile-1.4.0-beta.1.min.js"></script>
 
 	<!-- KK: required for Phonegap Build API access -->
 	<script src="phonegap.js"></script>
@@ -53,12 +60,6 @@
 	
 	body { background-color: #000; };
 	
-	/* potential panel flicker fix */
-	.ui-panel-animate.ui-panel-content-wrap > .ui-content,
-	.ui-panel-animate.ui-panel-content-wrap > .ui-footer  {
-		-webkit-backface-visibility: hidden;
-		-webkit-transform: translate3d(0,0,0);
-	}
 	</style>
 	
 </head>
