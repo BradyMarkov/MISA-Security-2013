@@ -1,6 +1,3 @@
-<!DOCTYPE html>
-
-
 <html>
 <head>
 
@@ -44,7 +41,58 @@
 	
 	<div data-role="content">
 	
+		<script>
+		
+			 // The watch id references the current `watchHeading`
+		var watchID = null;
 
+		// Wait for PhoneGap to load
+		//
+		document.addEventListener("deviceready", onDeviceReady, false);
+
+		// PhoneGap is ready
+		//
+		function onDeviceReady() {
+			startWatch();
+		}
+		// Start watching the compass
+		//
+		function startWatch() {
+
+			// Update compass every 3 seconds
+			var options = { frequency: 3000 };
+
+			watchID = navigator.compass.watchHeading(onSuccess, onError, options);
+		}
+
+		// Stop watching the compass
+		//
+		function stopWatch() {
+			if (watchID) {
+				navigator.compass.clearWatch(watchID);
+				watchID = null;
+			}
+		}
+
+		// onSuccess: Get the current heading
+		//
+		function onSuccess(heading) {
+			var element = document.getElementById('heading');
+			element.innerHTML = 'Heading: ' + heading.magneticHeading;
+			//console.log(heading.magneticHeading);
+			var rotation = 360 - Math.round(heading.magneticHeading),
+			rotateDeg = 'rotate(' + rotation + 'deg)';
+			// TODO: fix - this code only works on webkit browsers, not wp7
+			$('#compass').css('-webkit-transform', rotateDeg);
+		}
+
+		// onError: Failed to get the heading
+		//
+		function onError(compassError) {
+			alert('Compass error: ' + compassError.code);
+		}
+			
+		</script>
 		
 		<div id="compasscontainer" ><img id="compass" class="Center1" src="img/compass320.png" /></div>
 	<!--<script src="js/compass.js"></script>-->
