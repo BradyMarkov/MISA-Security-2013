@@ -37,10 +37,17 @@
 		// modify default error message/theme
 		$.mobile.pageLoadErrorMessage = "Sorry, there was an error loading the page!";
 		$.mobile.pageLoadErrorMessageTheme = "a";
+		
+		// default page transition
+		$.mobile.defaultPageTransition  = 'flow';
 				
 	});
 
-
+	// Wait for device API libraries to load
+    //
+    function onLoad() {
+        document.addEventListener("deviceready", onDeviceReady, false);
+    }
     // device APIs are available
     //
     function onDeviceReady() {
