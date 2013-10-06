@@ -39,7 +39,7 @@
 	/* Generic Overrides */
 	.ui-header .ui-title, .ui-footer .ui-title {
 		/* header width to fit title */
-		margin: .6em 15% .8em;
+		/*margin: .6em 15% .8em;*/
 	}
 	
 	/* disable text highlighting */
@@ -64,6 +64,23 @@
 	img.full-responsive {
 		width: 100%;
 		}
+		
+	.ui-panel-content-wrap {
+		background: url(img/beach_bg.jpg) no-repeat center center fixed; 
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		}
+		
+	#panel-menu {
+		background-image: url(img/leather_bg.jpg);
+		background-repeat: repeat;
+		}
+	
+	#panel-list {
+		opacity: 0.8;
+		}
 	</style>
 	
 </head>
@@ -73,14 +90,12 @@
 	<div data-role="page" id="page-home" data-theme="b" >
 		
 		<div data-role="header" data-position="fixed">
-			<!--
 			<a data-role="button" href="#panel-menu" data-icon="bars" data-iconpos="left">
 				Menu
 			</a>
-			-->
-			<a href="#panel-menu" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Menu</a>
+			<!--<a href="#panel-menu" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Menu</a>-->
 			<h1>
-				MISA Security Conference 2013
+				MISA Security 2013
 			</h1>
 		</div>
 		
@@ -88,7 +103,7 @@
 			<p><img class="full-responsive" alt="MISA 2013 Logo" src="img/parchment_logo-1024.png" /></p>
 			<!--<p>[Spotlight carousel placeholder?]</p>-->
 			<div data-role="collapsible-set">
-				<div data-role="collapsible" data-collapsed="false" data-content-theme="b" data-collapsible="false">
+				<div data-role="collapsible" data-collapsed="false" data-content-theme="b" data-collapsible="false"  data-expanded-icon="arrow-r" class="disable-collapse">
 					<h3>Welcome!</h3>
 					<p>Welcome to the official <em>MISA Security Conference 2013</em> mobile application. To explore, use the menu button on the top left corner of your screen.</p>
 					<a href="#panel-menu" data-role="button">Show me</a>
@@ -124,7 +139,6 @@
 			<div class="container" id="DataList" data-role="collapsible-set"  >
 				<div id="RSScontainer"   data-collapsed-icon="arrow-d" data-expanded-icon="arrow-u" data-iconpos="right" data-inset="false" data-inset="false" >
 					<h2>MISA Security Conference 2013</h2>
-					
 				</div>
 		
 			</div>
@@ -144,13 +158,6 @@
 
     </div>
 	
-
-	
-
-
-	
-
-
 	 <script>
 	 /*
 	 

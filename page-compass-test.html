@@ -33,6 +33,7 @@
 		*/
 		// Start watching the compass
 		//
+		
 		function startWatch() {
 
 			// Update compass every 3 seconds
@@ -53,8 +54,8 @@
 		// onSuccess: Get the current heading
 		//
 		function onSuccess(heading) {
-			var element = $('#heading');
-			element.innerHTML = 'Heading: ' + heading.magneticHeading;
+			//var element = $('#heading');
+			//element.innerHTML = 'Heading: ' + heading.magneticHeading;
 			//console.log(heading.magneticHeading);
 			var rotation = 360 - Math.round(heading.magneticHeading),
 			rotateDeg = 'rotate(' + rotation + 'deg)';
@@ -71,11 +72,13 @@
 		</script>
 		
 	<!--<script src="js/compass.js"></script>-->
-		<div id="heading">Waiting for heading...</div>
+		<!--<div id="heading">Waiting for heading...</div>-->
+		<div id="compasscontainer" ><img id="compass" class="Center" src="img/compass320.png" /></div>
+		<!--
 		<button onclick="startWatch();">Start Watching</button>
 		<button onclick="stopWatch();">Stop Watching</button>	
-		<div id="compasscontainer" ><img id="compass" class="Center" src="img/compass320.png" /></div>
-
+		-->
+		
 	</div>
 	</body>
 </html>

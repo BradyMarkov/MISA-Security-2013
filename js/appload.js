@@ -42,6 +42,14 @@
 		$.mobile.defaultPageTransition  = 'flow';
 				
 	});
+	
+	// disable collapse for disable-collapse
+	$(function(){
+	$('.disable-collapse h3 a').on('click', function() {
+		return false;
+		console.log('clicked');
+		});
+	});
 
 	// Wait for device API libraries to load
     //
@@ -59,12 +67,16 @@
 				$('#panel-menu').panel( "toggle" );
 			}, false);
     }
-			
+	
 	$('#Page-Map').on("pageload", function(){
 		console.log("loading gmaps...")
 		//google.maps.event.addDomListener(window, 'load', initialize);
 	});
 	
+	$(document).on("pageload", '#page-compass-test', function(){
+		console.log("loading compass...")
+		startWatch();
+	});
 	
 	$(document).on('pageload', '#Page-Map', function(event){
 		console.log("loading gmaps...");
@@ -77,7 +89,7 @@
 	$(document).on('pagecreate', '[data-role="page"]', function(){
 		
 		// add panel menu
-		$('<div>').attr({'id':'panel-menu','data-role':'panel','data-display':'push'}).load("inc/panel-menu.html", function(){
+		$('<div>').attr({'id':'panel-menu','data-role':'panel','data-display':'overlay'}).load("inc/panel-menu.html", function(){
 			$(this).trigger('create');
 		}).appendTo($(this));
 		
@@ -174,3 +186,44 @@
 	}
 	
 	// /column toggle code
+	
+	// compass testing
+	 // The watch id references the current `watchHeading`
+	var watchID = null;
+
+	// Start watching the compass
+	//
+	function startWatch() {
+
+		// Update compass every 3 seconds
+		var options = { frequency: 100 };
+
+		watchID = navigator.compass.watchHeading(onSuccess, onError, options);
+	}
+
+	// Stop watching the compass
+	//
+	function stopWatch() {
+		if (watchID) {
+			navigator.compass.clearWatch(watchID);
+			watchID = null;
+		}
+	}
+
+	// onSuccess: Get the current heading
+	//
+	function onSuccess(heading) {
+		//var element = $('#heading');
+		//element.innerHTML = 'Heading: ' + heading.magneticHeading;
+		//console.log(heading.magneticHeading);
+		var rotation = 360 - Math.round(heading.magneticHeading),
+		rotateDeg = 'rotate(' + rotation + 'deg)';
+		// TODO: fix - this code only works on webkit browsers, not wp7
+		$('#compass').css('-webkit-transform', rotateDeg);
+	}
+
+	// onError: Failed to get the heading
+	//
+	function onError(compassError) {
+		alert('Compass error: ' + compassError.code);
+	}
