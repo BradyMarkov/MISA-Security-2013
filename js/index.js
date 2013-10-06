@@ -105,20 +105,39 @@
 	});
 	
 	
-	$(document).delegate("#page-weather", "pageshow", function() {
+	$(document).delegate("#page-weather", "pagebeforeshow", function() {
 		$.simpleWeather({
 			woeid: '4078',
 			unit: 'c',
 			success: function(weather) {
 				var html = '';
-				html += '<img class="full-responsive" src="img/weather/'+weather.code+'.png">';
-				html += '<div class="text-right">';
-				html += '<h2>'+weather.city+', '+weather.region+'</h2>';
-				html += '<p>'+weather.temp+'&deg; '+weather.units.temp+'<br /><span>'+weather.currently+'</span></p>';
-				html += '<a href="'+weather.link+'">View Forecast &raquo;</a>';
+				//html += '<img class="full-responsive" src="img/weather/'+weather.code+'.png">';
+				html += '<img class="weather-image" src="' + weather.image + '">';
+				html += '<div class="weather-forecast">';
+				html += '<h3>'+weather.city+', '+weather.region+'</h3>';
+				html += '<p><span style="font-size:3em;">' + weather.temp + '&deg;' + weather.units.temp + '</span><br /><span style="font-size:1.5em;">' + weather.currently + '</span></p>';
+				html += '<a data-role="button" href="' + weather.link + '">View Forecast &raquo;</a>';
 				html += '</div>';
-		 
-				$("#weather").html(html);
+				$('#weather-today').html(html);
+				
+				html = '';
+				html += '<div class="ui-grid-b weather-extended">';
+					html += '<div class="ui-block-a label">Low</div>';
+					html += '<div class="ui-block-b label">High</div>';
+					html += '<div class="ui-block-c label">Humidity</div>';
+					html += '<div class="ui-block-a value">' + weather.low + '&deg;' + weather.units.temp + '</div>';
+					html += '<div class="ui-block-b value">' + weather.high + '&deg;' + weather.units.temp + '</div>';
+					html += '<div class="ui-block-c value">' + weather.humidity + '%</div>';
+					html += '<div class="ui-block-a label">Sunrise</div>';
+					html += '<div class="ui-block-b label">Sunset</div>';
+					html += '<div class="ui-block-c label">Pressure</div>';
+					html += '<div class="ui-block-a value">' + weather.sunrise + '</div>';
+					html += '<div class="ui-block-b value">' + weather.sunset + '</div>';
+					html += '<div class="ui-block-c value">' + ((weather.rising == 1) ? '<div class="ui-icon ui-icon-arrow-u"></div>' : '<div class="ui-icon ui-icon-arrow-d"></div>') + '</div>';
+				html += '</div>';
+				
+				html += '<p><b>Last updated:</b> ' + weather.updated + '</p>';
+				$('#weather-extended').html(html);
 			},
 			error: function(error) {
 				$("#weather").html("<p>"+error+"</p>");

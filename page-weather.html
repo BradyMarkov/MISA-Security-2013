@@ -3,7 +3,7 @@
 <head></head>
 <body>
 
-	<div data-role="page" id="page-weather" data-add-back-btn="true" data-back-btn-text="Back">
+	<div data-role="page" id="page-weather" data-add-back-btn="true">
 		
 		<div data-theme="a" data-role="header">
 			<a data-role="button" href="#panel-menu" data-icon="bars" data-iconpos="left">
@@ -14,7 +14,11 @@
 			</h3>
 		</div>
 		<div data-role="content">
-			<div id="weather"></div>
+			<div id="weather-today"></div>
+			<div class="clear spacer"></div>
+			<div id="weather-extended"></div>
+			<div class="spacer clear"></div>
+			<a data-role="button" data-icon="arrow-r" href="http://weather.yahoo.ca">View Full Forecast</a>
 		</div>
 
 		<div data-theme="a" data-role="footer" data-position="fixed">

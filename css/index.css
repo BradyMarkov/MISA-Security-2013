@@ -1,6 +1,9 @@
 /* Helpers */
 .clear { clear: both; }
 .text-right { text-align: right; }
+.text-center { text-align: center; }
+.text-large { font-size: 1.3em; }
+.spacer { padding-bottom: 20px; }
 
 /* Generic Overrides */
 .ui-header .ui-title, .ui-footer .ui-title {
@@ -8,6 +11,30 @@
 	/*margin: .6em 15% .8em;*/
 }
 
+.weather-image {
+	position: absolute;
+	z-index: -99;
+	left: 0;
+	padding-left: 20px;
+	}
+.weather-forecast {
+	text-align: right;
+	padding-right: 20px;
+	}
+.weather-extended {
+	text-align: center;
+	}
+.weather-extended .label {
+	font-weight: 600;
+	}
+.weather-extended .value {
+	font-size: 1.5em;
+	padding-bottom: 20px;
+	}
+.weather-extended .value div {
+	margin: 0 auto;
+	margin-top: 5px;
+	}
 
 /* disable text highlighting */
 body {
@@ -43,7 +70,7 @@ img.full-responsive {
 	background: transparent !important;
 }
 .ui-panel-content-wrap.ui-body-c {
-	background: rgba(255,255,255,0.75) !important;
+	background: rgba(255,255,255,0.9) !important;
 }
 #panel-menu {
 	background-image: url(../img/leather_bg.jpg);
