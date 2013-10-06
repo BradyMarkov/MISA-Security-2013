@@ -104,6 +104,27 @@
 		$('#' + $.mobile.activePage.attr('id')).find('#panel-menu').find('a.' + $.mobile.activePage.attr('id')).addClass('ui-btn-active');
 	});
 	
+	
+	$(document).delegate("#page-weather", "pageshow", function() {
+		$.simpleWeather({
+			woeid: '4078',
+			unit: 'c',
+			success: function(weather) {
+				var html = '';
+				html += '<img class="full-responsive" src="img/weather/'+weather.code+'.png">';
+				html += '<div class="text-right">';
+				html += '<h2>'+weather.city+', '+weather.region+'</h2>';
+				html += '<p>'+weather.temp+'&deg; '+weather.units.temp+'<br /><span>'+weather.currently+'</span></p>';
+				html += '<a href="'+weather.link+'">View Forecast &raquo;</a>';
+				html += '</div>';
+		 
+				$("#weather").html(html);
+			},
+			error: function(error) {
+				$("#weather").html("<p>"+error+"</p>");
+			}
+		});
+	});
 				
 	// Swipe right to open panel
 	/*

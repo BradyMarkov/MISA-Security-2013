@@ -1,25 +1,28 @@
 <!DOCTYPE html>
-
-
 <html>
-<head>
-	
-</head>
+<head></head>
 <body>
 
-	<!--Page-Config-->
-	<div data-role="page" id="page-weather">
+	<div data-role="page" id="page-weather" data-add-back-btn="true" data-back-btn-text="Back">
 		
 		<div data-theme="a" data-role="header">
 			<a data-role="button" href="#panel-menu" data-icon="bars" data-iconpos="left">
 				Menu
 			</a>
 			<h3>
-				Program Guide
+				Weather
 			</h3>
 		</div>
-		<div data-role="content">Options...</div>
-	
+		<div data-role="content">
+			<div id="weather"></div>
+		</div>
+
+		<div data-theme="a" data-role="footer" data-position="fixed">
+			<a data-role="button" data-rel="back" data-icon="arrow-l">
+				Back
+			</a>
+		</div>
+		
     </div>
 	
 </body>

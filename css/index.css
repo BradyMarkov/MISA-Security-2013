@@ -1,0 +1,55 @@
+/* Helpers */
+.clear { clear: both; }
+.text-right { text-align: right; }
+
+/* Generic Overrides */
+.ui-header .ui-title, .ui-footer .ui-title {
+	/* header width to fit title */
+	/*margin: .6em 15% .8em;*/
+}
+
+
+/* disable text highlighting */
+body {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: moz-none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+body { background-color: #000 !important; };
+
+/* potential panel flicker fix */
+.ui-panel-animate.ui-panel-content-wrap > .ui-content,
+.ui-panel-animate.ui-panel-content-wrap > .ui-footer  {
+	-webkit-backface-visibility: hidden;
+	-webkit-transform: translate3d(0,0,0);
+}
+
+img.full-responsive {
+	width: 100%;
+	}
+	
+.ui-page {
+	background: url(../img/beach_bg.jpg);
+	background-repeat: no-repeat;
+	/*background-position: fixed;*/
+	background-size: cover;
+	background-position: center center;
+}
+.ui-panel-content-wrap.ui-body-b {
+	background: transparent !important;
+}
+.ui-panel-content-wrap.ui-body-c {
+	background: rgba(255,255,255,0.75) !important;
+}
+#panel-menu {
+	background-image: url(../img/leather_bg.jpg);
+	background-repeat: repeat;
+	}
+
+#panel-list {
+	opacity: 0.6;
+	}
