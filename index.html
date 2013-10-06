@@ -65,13 +65,10 @@
 		width: 100%;
 		}
 		
-	.ui-panel-content-wrap {
-		background: url(img/beach_bg.jpg) no-repeat center center fixed; 
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		background-size: cover;
-		}
+	.ui-content {
+		background : transparent url(img/beach_bg.jpg) 0 0 no-repeat fixed !important;
+		background-size : cover;
+	}​
 		
 	#panel-menu {
 		background-image: url(img/leather_bg.jpg);
@@ -79,7 +76,7 @@
 		}
 	
 	#panel-list {
-		opacity: 0.8;
+		opacity: 0.6;
 		}
 	</style>
 	
@@ -105,8 +102,9 @@
 			<div data-role="collapsible-set">
 				<div data-role="collapsible" data-collapsed="false" data-content-theme="b" data-collapsible="false"  data-expanded-icon="arrow-r" class="disable-collapse">
 					<h3>Welcome!</h3>
-					<p>Welcome to the official <em>MISA Security Conference 2013</em> mobile application. To explore, use the menu button on the top left corner of your screen.</p>
-					<a href="#panel-menu" data-role="button">Show me</a>
+					<p>Welcome to the official <em>MISA Security Conference 2013</em> mobile application.</p>
+					<p>To explore, use the menu button on the top left corner of your screen or tap the button below.</p>
+					<a href="#panel-menu" data-role="button">Menu</a>
 				</div>
 			</div>
 		</div>
