@@ -52,8 +52,8 @@
 		user-select: none;
 	}
 	
-	body { background-color: #000; };
-	
+	body { background-color: #000 !important; };
+
 	/* potential panel flicker fix */
 	.ui-panel-animate.ui-panel-content-wrap > .ui-content,
 	.ui-panel-animate.ui-panel-content-wrap > .ui-footer  {
@@ -66,7 +66,9 @@
 		}
 		
 	.ui-page {
-		background: url(img/beach_bg.jpg) no-repeat center center fixed;
+		background: url(img/beach_bg.jpg);
+		background-repeat: no-repeat;
+		/*background-position: fixed;*/
 		background-size: cover;
 	}
 	.ui-panel-content-wrap.ui-body-b {
