@@ -70,7 +70,7 @@ img.full-responsive {
 	background: transparent !important;
 }
 .ui-panel-content-wrap.ui-body-c {
-	background: rgba(255,255,255,0.9) !important;
+	background: rgba(255,255,255,0.75) !important;
 }
 #panel-menu {
 	background-image: url(../img/leather_bg.jpg);
@@ -85,6 +85,10 @@ img.full-responsive {
 #trackselect legend {
 	margin: 0 auto;
 	}
+table#guide {
+	border-spacing:0;
+    border-collapse:collapse;
+	}
 #guide td {
 	padding: 5px;
 	}
@@ -94,5 +98,10 @@ img.full-responsive {
 	}
 #guide .time {
 	white-space: nowrap;
-	font-size: 0.8em;
+	font-size: 0.75em;
+	}
+#guide .track1,
+#guide .track2,
+#guide .track3 {
+	font-size: 0.9em;
 	}
