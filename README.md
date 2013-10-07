@@ -25,28 +25,32 @@ For example we can setup a simple Content Management which allows another person
 - ~~icons~~
 - ~~icons: rounded border for black bg contrast~~
 - ~~splash screens~~
-    * retina + xhdpi filesizes are fairly large- will require testing
-    * BB splash behavior unknown- strange proportions
-	* (temp removed splash screens due to package size- see issues)
+    * ~~retina + xhdpi filesizes are fairly large- will require testing~~
+    * ~~BB splash behavior unknown- strange proportions~~
+	* (removed splash screens due to package size- see issues)
 
 ### UI-Functionality ###
 - ~~panel menu~~
 - ~~panel menu dynamic active state~~
-- program guide track selection
+- ~~program guide track selection~~
+- ~~weather page~~
 - Google Maps fullscreen
 - carousel plugin review
 - localstorage to store page-specfic history
 
 ### UI-Graphics ###
+- ~~responsive bg image~~
+- ~~panel texture~~
 - compass graphic
 - pirate-themed basemap?
 
 ### UI-Misc ###
-- themeroller theme
 - menu icons
 
 ### Content ###
 - ~~program schedule~~
+- ~~help~~
+- ~~about~~
 - speaker BIO's
 - additional news feeds
 - treasure map POIs
