@@ -198,7 +198,7 @@
 	$(document).delegate("#page-floorplan", "pageshow", function() {
 		console.log('floorplan page');
 		$(function(){
-			floorscroll = new iScroll('#floorplan',
+			floorscroll = new iScroll('floorplan',
 				{ zoom:true, zoomMax: 4 });
 			});
 	});
