@@ -39,7 +39,7 @@
 		$.mobile.pageLoadErrorMessageTheme = "a";
 		
 		// default page transition
-		$.mobile.defaultPageTransition  = 'slide';
+		$.mobile.defaultPageTransition  = 'flow';
 				
 	});
 	
