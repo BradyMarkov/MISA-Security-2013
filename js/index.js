@@ -196,12 +196,18 @@
 	
 	var floorscroll;
 	$(document).delegate("#page-floorplan", "pageshow", function() {
-		console.log('floorplan page');
 		$(function(){
 			floorscroll = new iScroll('floorplan',
 				{ zoom:true, zoomMax: 4 });
 			});
 	});
+	
+	function gmap(address) {
+		// KK: encodes address and opens in external browser window or native app
+		window.open('http://maps.google.com/maps?q=' + encodeURIComponent(address), '_system');
+		//trace:
+		//console.log('http://maps.google.com/maps?q=' + encodeURIComponent(address));
+		}
 	
 	// compass testing
 	 // The watch id references the current `watchHeading`
