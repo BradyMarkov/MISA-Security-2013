@@ -34,8 +34,8 @@ For example we can setup a simple Content Management which allows another person
 - ~~panel menu dynamic active state~~
 - ~~program guide track selection~~
 - ~~weather page~~
-- Google Maps fullscreen
-- carousel plugin review
+- ~~pinch-zoom floor plan~~
+- ~~google maps app integration~~
 - localstorage to store page-specfic history
 
 ### UI-Graphics ###
@@ -44,13 +44,29 @@ For example we can setup a simple Content Management which allows another person
 - compass graphic
 - pirate-themed basemap?
 
-### UI-Misc ###
-- menu icons
-
 ### Content ###
 - ~~program schedule~~
 - ~~help~~
 - ~~about~~
+- ~~places to eat~~
+- ~~floor plan~~
+- ~~about MISA~~
+- ~~help~~
 - speaker BIO's
+- sponsor links/listing
 - additional news feeds
 - treasure map POIs
+
+### Release ###
+- Android
+	* ~~signing key~~
+	* dev account ($25)
+	* app store submission
+- BlackBerry
+	* signing key
+	* dev account
+	* app store submission
+- Apple
+	* signing key (~$100?)
+	* dev account
+	* app store submission
