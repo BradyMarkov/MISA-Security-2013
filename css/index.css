@@ -116,3 +116,7 @@ table#guide {
 #floorplan img {
 	-webkit-transform:translate3d(0,0,0);
 	}
+	
+.places .ui-li-heading {
+	margin-top: 0 !important;
+	}
