@@ -2,7 +2,7 @@
 <html>
 <head>
 
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=true">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5, user-scalable=1">
 
 	<link rel="stylesheet" href="themes/default/jquery.mobile.theme-1.3.2.min.css" />
 	<link rel="stylesheet" href="css/jquery.mobile.structure-1.3.2.min.css" />
@@ -18,14 +18,14 @@
 </head>
 <body>
 
-	<div data-role="page" id="page-floorplan" data-add-back-btn="true" data-theme="a" style="background-color: #fff !important;">
+	<div data-role="page" id="page-floorplan" data-add-back-btn="true">
 		
 		<div data-theme="a" data-role="header">
 			<a data-role="button" href="#panel-menu" data-icon="bars" data-iconpos="left">Menu</a>
 			<h3>Floor Plan</h3>
 			<a data-role="button" data-rel="back" data-icon="arrow-l">Back</a>
 		</div>
-		<div data-role="content">
+		<div data-role="content" style="background-color: #fff !important;>
 		
 			<div data-targetsize="0.45"  class="zoomTarget" >
 				<img src="img/floor_plan.png" class="full-responsive" alt="Floor Plan" />
