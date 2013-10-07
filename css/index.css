@@ -80,3 +80,19 @@ img.full-responsive {
 #panel-list {
 	opacity: 0.6;
 	}
+	
+/* Program Guide */
+#trackselect legend {
+	margin: 0 auto;
+	}
+#guide td {
+	padding: 5px;
+	}
+#guide .track2,
+#guide .track3 {
+	display: none;
+	}
+#guide .time {
+	white-space: nowrap;
+	font-size: 0.8em;
+	}

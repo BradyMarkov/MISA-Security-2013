@@ -6,25 +6,16 @@
 	<div data-role="page" id="page-weather" data-add-back-btn="true">
 		
 		<div data-theme="a" data-role="header">
-			<a data-role="button" href="#panel-menu" data-icon="bars" data-iconpos="left">
-				Menu
-			</a>
-			<h3>
-				Weather
-			</h3>
+			<a data-role="button" href="#panel-menu" data-icon="bars" data-iconpos="left">Menu</a>
+			<h3>Weather</h3>
+			<a data-role="button" data-rel="back" data-icon="arrow-l">Back</a>
 		</div>
 		<div data-role="content">
 			<div id="weather-today"></div>
 			<div class="clear spacer"></div>
 			<div id="weather-extended"></div>
 			<div class="spacer clear"></div>
-			<a data-role="button" data-icon="arrow-r" href="http://weather.yahoo.ca">View Full Forecast</a>
-		</div>
-
-		<div data-theme="a" data-role="footer" data-position="fixed">
-			<a data-role="button" data-rel="back" data-icon="arrow-l">
-				Back
-			</a>
+			<a data-role="button" rel="external" data-ajax="false" data-icon="arrow-r" href="http://weather.yahoo.ca">View Full Forecast</a>
 		</div>
 		
     </div>

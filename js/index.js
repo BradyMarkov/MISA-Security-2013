@@ -116,7 +116,7 @@
 				html += '<div class="weather-forecast">';
 				html += '<h3>'+weather.city+', '+weather.region+'</h3>';
 				html += '<p><span style="font-size:3em;">' + weather.temp + '&deg;' + weather.units.temp + '</span><br /><span style="font-size:1.5em;">' + weather.currently + '</span></p>';
-				html += '<a data-role="button" href="' + weather.link + '">View Forecast &raquo;</a>';
+				//html += '<a data-role="button" href="' + weather.link + '">View Forecast &raquo;</a>';
 				html += '</div>';
 				$('#weather-today').html(html);
 				
@@ -172,60 +172,27 @@
 	});
 	*/
 	
-	// Code for toggling table column with radio rather than checkbox
-	$(document).on('pagebeforeshow', '.ui-page', function(){ 
-		alterTablePopup('table-column-toggle', 0);
-		alterTablePopup('table-alt',0);    
+
+	$(document).delegate("#page-guide", "pagebeforeshow", function() {
+		$('input[name="track"]').on('change', function() {
+			hideAllTracks();
+			switch ($(this).val()) {
+				case "technical":
+					$('.track2').delay(250).fadeIn();
+					break;
+				case "management":
+					$('.track3').delay(250).fadeIn();
+					break;
+				default: // general
+					$('.track1').delay(250).fadeIn();
+			};
+		});
+		function hideAllTracks() {
+			$('.track1').fadeOut(250);
+			$('.track2').fadeOut(250);
+			$('.track3').fadeOut(250);
+			}
 	});
-
-	function alterTablePopup(tableID, showColumnID) {    
-		if($.mobile.activePage.find('#'+tableID).length > 0) {
-			// First unsellect everything, we must trigger click event so table look could change  
-			cleanTableColumns(showColumnID, tableID);
-
-			$(document).on('popupafteropen', '#' + tableID + '-popup',function(event, ui) {
-				var popup = $(this);        
-
-				//Hide old fieldset
-				popup.find('fieldset').hide();
-				$.mobile.activePage.find('#radio-fieldset').remove();
-
-				$('<fieldset>').attr({'data-role':'controlgroup','id':'radio-fieldset'}).appendTo(popup);
-				popup.find('input').each(function(i){            
-					(i === showColumnID) ?   $('<input>').attr({'name': tableID+'-radio','id': tableID+'-radio-'+i,'type':'radio','value':'v'+i,'checked':'checked','class':tableID+'-radio'}).appendTo('#radio-fieldset') :  $('<input>').attr({'name':tableID+'-radio','id':tableID+'-radio-'+i,'type':'radio','value':'v'+i}).appendTo('#' + tableID + '-popup #radio-fieldset');           
-
-					$('<label>').attr({'for':tableID+'-radio-'+i}).text($(this).prev().find('.ui-btn-text').text()).appendTo('#' + tableID + '-popup #radio-fieldset'); 
-				}); 
-				$('[type="radio"]').checkboxradio();
-				$.mobile.activePage.trigger('create');
-			}); 
-
-			$(document).on('popupafterclose', '#' + tableID + '-popup',function(event, ui) {
-				var popup = $(this);  
-
-				$.mobile.activePage.find('#radio-fieldset').remove();
-				popup.find('fieldset').show();        
-			});
-
-			$(document).on('vmouseup', '#' + tableID + '-popup #radio-fieldset .ui-controlgroup-controls .ui-radio', function(e){ 
-				if(e.handled !== true) // This will prevent event triggering more then once
-				{        
-					var selectedRadio = $(this).find('[type="radio"]').attr('id').replace(tableID+"-radio-","");
-					cleanTableColumns(selectedRadio, tableID);
-					e.handled = true;
-				}    
-			});     
-		}
-	} 
-
-	function cleanTableColumns(columnNo, tableID){
-		$('#' + tableID + '-popup').find('.ui-checkbox label').each(function(i){
-			($(this).hasClass('ui-checkbox-on')) ? $(this).trigger('vclick') : ''; // Unselect every selected field
-			(i == columnNo) ? $(this).trigger('vclick') : ''; // select first for further use       
-		});  
-	}
-	
-	// /column toggle code
 	
 	// compass testing
 	 // The watch id references the current `watchHeading`
