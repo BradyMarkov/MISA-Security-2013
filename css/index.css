@@ -54,6 +54,9 @@ body { background-color: #000 !important; };
 	-webkit-backface-visibility: hidden;
 	-webkit-transform: translate3d(0,0,0);
 }
+.ui-page {
+   -webkit-backface-visibility: hidden;
+   }
 
 img.full-responsive {
 	width: 100%;
