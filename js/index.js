@@ -194,6 +194,15 @@
 			}
 	});
 	
+	var floorscroll;
+	$(document).delegate("#page-floorplan", "pageshow", function() {
+		console.log('floorplan page');
+		$(function(){
+			floorscroll = new iScroll('#floorplan',
+				{ zoom:true, zoomMax: 4 });
+			});
+	});
+	
 	// compass testing
 	 // The watch id references the current `watchHeading`
 	var watchID = null;
