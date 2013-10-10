@@ -75,7 +75,7 @@ img.full-responsive {
 .ui-panel-content-wrap.ui-body-c {
 	background: rgba(255,255,255,0.75) !important;
 }
-#panel-menu {
+#panelmenu {
 	background-image: url(../img/leatherbg.jpg);
 	background-repeat: repeat;
 	}
