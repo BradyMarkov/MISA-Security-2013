@@ -64,7 +64,7 @@
 		// bind menu button (Android/BB)
 		document.addEventListener("menubutton", function(){
 				//console.log('menu button pressed');
-				$('#panel-menu').panel( "toggle" );
+				$('#panelmenu').panel( "toggle" );
 			}, false);
     }
 	
@@ -89,7 +89,7 @@
 	$(document).on('pagecreate', '[data-role="page"]', function(){
 		
 		// add panel menu
-		$('<div>').attr({'id':'panel-menu','data-role':'panel','data-display':'overlay'}).load("inc/panel-menu.html", function(){
+		$('<div>').attr({'id':'panelmenu','data-role':'panel','data-display':'overlay'}).load("inc/panelmenu.html", function(){
 			$(this).trigger('create');
 		}).appendTo($(this));
 		
@@ -101,7 +101,7 @@
 	// will work in native app
 	$(document).on('pageshow', function() {
 		$('.page-home').removeClass('ui-btn-active');
-		$('#' + $.mobile.activePage.attr('id')).find('#panel-menu').find('a.' + $.mobile.activePage.attr('id')).addClass('ui-btn-active');
+		$('#' + $.mobile.activePage.attr('id')).find('#panelmenu').find('a.' + $.mobile.activePage.attr('id')).addClass('ui-btn-active');
 	});
 	
 	
@@ -152,7 +152,7 @@
 		$(document).on('swiperight', function( e ) {
 			// check if panel is open, open panel
 			if ( $.mobile.activePage.jqmData('panel') !== 'open' ) {
-					$.mobile.activePage.find('#panel-menu').panel("open");
+					$.mobile.activePage.find('#panelmenu').panel("open");
 			}
 		});
 		
@@ -167,7 +167,7 @@
 			event.preventDefault();
 
 			// Your code to close panel or show another page or whatever...
-			$( '#panel-menu' ).panel( "close" );
+			$( '#panelmenu' ).panel( "close" );
 		}
 	});
 	*/
