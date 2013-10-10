@@ -63,7 +63,7 @@ img.full-responsive {
 	}
 	
 .ui-page {
-	background: url(../img/beach_bg.jpg);
+	background: url(../img/beachbg.jpg);
 	background-repeat: no-repeat;
 	/*background-position: fixed;*/
 	background-size: cover;
@@ -76,7 +76,7 @@ img.full-responsive {
 	background: rgba(255,255,255,0.75) !important;
 }
 #panel-menu {
-	background-image: url(../img/leather_bg.jpg);
+	background-image: url(../img/leatherbg.jpg);
 	background-repeat: repeat;
 	}
 
