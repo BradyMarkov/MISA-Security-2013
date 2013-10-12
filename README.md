@@ -49,6 +49,10 @@ Update Pages: Program Guide
 	need to confirm event from updated content
 
 	
+--**--Priority 2
+Update Pages: Floor Plan
+	New image with changes and more detail..on it in email
+	
 	
 --**--Priority 3
 Update Pages: about
@@ -64,6 +68,7 @@ Bugs:
 	Zoom on Map does not work on android
 	Header is not fixed to the top of the page in everypage but scrolls away, this produces issues in some devices for navigation
 	Misa Security 2013 title doesnot fit on most devices can we shorten it
+	Sometime th zoom on the floor plan takes over the whole viewpane makeing it imposssile to go back or hit menu as it disapears
 
 	
 	
