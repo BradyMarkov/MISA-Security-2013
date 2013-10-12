@@ -69,8 +69,10 @@ Bugs:
 	Header is not fixed to the top of the page in everypage but scrolls away, this produces issues in some devices for navigation
 	Misa Security 2013 title doesnot fit on most devices can we shorten it
 	Sometime th zoom on the floor plan takes over the whole viewpane makeing it imposssile to go back or hit menu as it disapears
-
-	
+	mapp links include the street address which places two markers a green marker and a red marker - confusing the user who thinks those are directions
+		(it google adding the actual steet address but finding the resturant if the street address is remove it fixes it
+		Tokyo Sushi,  Chatham, ON N7M 1N9 - One Red marker
+		Tokyo Sushi, 150 Richmond St, Chatham, ON N7M 1N9 -two markers green and red
 	
 Other
 	~~Update phone number to new DID (226) 312-2065 done~~
