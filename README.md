@@ -21,13 +21,13 @@ Do not use "–" or "_" in file names, do not start a filename with "."
 To keep testing time down and deployment testing down please use a little phonegap or phone specific programming
 -Please keep to straight and standard HTML5, CSS, jquery as possible
 
-### Priority 1 - New Page: Transportation ### 
+### Priority 1 - New Page: Transportation 
 - pagetransportation.html  
 - Bus Schedule - update from email of files
 - Taxi - update from email from Joann and Fred
 
 	
-### Priority 4 - but nice to have if we can fit in the time ### 
+### Priority 4 - but nice to have if we can fit in the time 
 New Pages: Bio’s
 - Need pages with Bio’s
 - Page that lists all Bios and links to them?
@@ -35,7 +35,7 @@ New Pages: Bio’s
 - Possibly speakers bio’s could double as the event description in the program guide (below)
 
 	
-### Priority 2 ### 
+### Priority 2  
 Update Pages: Program Guide
 - needs better formatting to see more clearly days and events it's hard to see
 - needs formated location info and event description on each event, possibly on new lines?
@@ -49,11 +49,11 @@ Update Pages: Program Guide
 - need to confirm event from updated content
 
 	
-### Priority 2 - Update Pages: Floor Plan ### 
+### Priority 2 - Update Pages: Floor Plan  
 - New image with changes and more detail..on it in email
 	
 	
-### Priority 3 - Update Pages: about ### 
+### Priority 3 - Update Pages: about 
 	Need MISA Logo
 	Web Link to http://www.misa-asim.ca/
 	Need Chatham-Kent Logo
@@ -61,7 +61,7 @@ Update Pages: Program Guide
 	Need Chatham-Kenb Link
 
 	
-### Priority Low - Bugs: ### 
+### Priority Low - Bugs: 
 - Zoom on Map does not work on android
 - Header is not fixed to the top of the page in everypage but scrolls away, this produces issues in some devices for navigation
 - Misa Security 2013 title doesnot fit on most devices can we shorten it
