@@ -16,46 +16,44 @@ For example we can setup a simple Content Management which allows another person
 ##TODO##
 
 Do not use "–" or "_" in file names, do not start a filename with "."
-it will not compile on Phonegap build
+- it will not compile on Phonegap build
 
 To keep testing time down and deployment testing down please use a little phonegap or phone specific programming
-Please keep to straight and standard HTML5, CSS, jquery as possible
+-Please keep to straight and standard HTML5, CSS, jquery as possible
 
---**--Priority 1
-New Page: Transportation pagetransportation.html  
-	Bus Schedule - update from email of files
-	Taxi - update from email from Joann and Fred
+### Priority 1 - New Page: Transportation ### 
+- pagetransportation.html  
+- Bus Schedule - update from email of files
+- Taxi - update from email from Joann and Fred
 
 	
---**--Priority 4 - but nice to have if we can fit in the time
+### Priority 4 - but nice to have if we can fit in the time ### 
 New Pages: Bio’s
-	Need pages with Bio’s
-	Page that lists all Bios and links to them?
-	-Mayor, CAO, Helen, and all Speakers
-	Possibly speakers bio’s could double as the event description in the program guide (below)
+- Need pages with Bio’s
+- Page that lists all Bios and links to them?
+- Mayor, CAO, Helen, and all Speakers
+- Possibly speakers bio’s could double as the event description in the program guide (below)
 
 	
---**--Priority 2
+### Priority 2 ### 
 Update Pages: Program Guide
-	-needs better formatting to see more clearly days and events it's hard to see
-	-needs formated location info and event description on each event, possibly on new lines?
-		provide easy way to see location 
-	-needs links to Bios pages possibly links to the event/bio of the event
-	-add separators rows, or colour rows maybe days, breaks dinner etc
-	-maybe colour cordinate the track rows green blue orange?
-	-Table does not fit 100% width of the screen
-	Spelling of management is wrong at 9:30 on wend
-	Missing all 3:30- 4:30 events on Wendnesday
-	need to confirm event from updated content
+- needs better formatting to see more clearly days and events it's hard to see
+- needs formated location info and event description on each event, possibly on new lines?
+- - provide easy way to see location 
+- needs links to Bios pages possibly links to the event/bio of the event
+- add separators rows, or colour rows maybe days, breaks dinner etc
+- maybe colour cordinate the track rows green blue orange?
+- Table does not fit 100% width of the screen
+- Spelling of management is wrong at 9:30 on wend
+- Missing all 3:30- 4:30 events on Wendnesday
+- need to confirm event from updated content
 
 	
---**--Priority 2
-Update Pages: Floor Plan
-	New image with changes and more detail..on it in email
+### Priority 2 - Update Pages: Floor Plan ### 
+- New image with changes and more detail..on it in email
 	
 	
---**--Priority 3
-Update Pages: about
+### Priority 3 - Update Pages: about ### 
 	Need MISA Logo
 	Web Link to http://www.misa-asim.ca/
 	Need Chatham-Kent Logo
@@ -63,44 +61,43 @@ Update Pages: about
 	Need Chatham-Kenb Link
 
 	
---**--Priority Low
-Bugs:
-	Zoom on Map does not work on android
-	Header is not fixed to the top of the page in everypage but scrolls away, this produces issues in some devices for navigation
-	Misa Security 2013 title doesnot fit on most devices can we shorten it
-	Sometime th zoom on the floor plan takes over the whole viewpane makeing it imposssile to go back or hit menu as it disapears
-	mapp links include the street address which places two markers a green marker and a red marker - confusing the user who thinks those are directions
-		(it google adding the actual steet address but finding the resturant if the street address is remove it fixes it
-		Tokyo Sushi,  Chatham, ON N7M 1N9 - One Red marker
-		Tokyo Sushi, 150 Richmond St, Chatham, ON N7M 1N9 -two markers green and red
+### Priority Low - Bugs: ### 
+- Zoom on Map does not work on android
+- Header is not fixed to the top of the page in everypage but scrolls away, this produces issues in some devices for navigation
+- Misa Security 2013 title doesnot fit on most devices can we shorten it
+- Sometime th zoom on the floor plan takes over the whole viewpane makeing it imposssile to go back or hit menu as it disapears
+- mapp links include the street address which places two markers a green marker and a red marker - confusing the user who thinks those are directions
+- - (it google adding the actual steet address but finding the resturant if the street address is remove it fixes it
+- - Tokyo Sushi,  Chatham, ON N7M 1N9 - One Red marker
+- - Tokyo Sushi, 150 Richmond St, Chatham, ON N7M 1N9 -two markers green and red
 	
-Other
-	~~Update phone number to new DID (226) 312-2065 done~~
-	~~Update Email to MISA email address Misa2013@chatham-kent.ca done~~
-	changing the page effect to slide or something else - got comments/ feedback sayin it's awkward
-	Missing recommended icon file - The bundle does not contain an app icon for iPhone / iPod Touch of exactly '120x120' pixels, in .png format. 
-	Missing recommended icon file - The bundle does not contain an app icon for iPad of exactly '76x76' pixels, in .png format. 
-	Missing recommended icon file - The bundle does not contain an app icon for iPad of exactly '152x152' pixels, in .png format. 
+### Other ### 
+- ~~Update phone number to new DID (226) 312-2065 done~~
+- ~~Update Email to MISA email address Misa2013@chatham-kent.ca done~~
+- changing the page effect to slide or something else - got comments/ feedback sayin it's awkward
+- Missing recommended icon file - The bundle does not contain an app icon for iPhone / iPod Touch of exactly '120x120' pixels, in .png format. 
+- Missing recommended icon file - The bundle does not contain an app icon for iPad of exactly '76x76' pixels, in .png format. 
+- Missing recommended icon file - The bundle does not contain an app icon for iPad of exactly '152x152' pixels, in .png format. 
 
 
-Cleanup
-		Remove all non needed Files and JS to make it faster...
+### Cleanup ### 
+- Remove all non needed Files and JS to make it faster...
 
 
-Spell Check
-		Teri will Spellcheck website on Tuesday
+### Spell Check ### 
+- Teri will Spellcheck website on Tuesday
 
-Need signoff on Tues/Wendnesday
+- Need signoff on Tues/Wendnesday
 		
 
 
-App stores:		
-	Screen shots for app stores (i create a few that will work but since apple hasnot approved the app yet maybe we wan these perfect for apple (android and BB worked)
-	1.)	Screenshots for 4-inch iPhone 5 and iPod touch (5th generation) Retina display must be 1136x640, 1136x600, 640x1136 or 640x1096 pixels, at least 72 DPI, in the RGB color space, and in the JPG or PNG format.
-	2.)	Screenshots for 3.5-inch iPhone and iPod touch Retina display must be 960x640, 960x600, 640x960 or 640x920 pixels, at least 72 DPI, in the RGB color space, and in the JPG or PNG format.
-	3.)	iPad Screenshots must be .jpeg, .jpg, .tif, .tiff, or .png file that is 1024x768, 1024x748, 768x1024, 768x1004, 2048x1536, 2048x1496, 1536x2048 or 1536x2008 pixels, at least 72 DPI, and in the RGB color space.
+### App Stores ### 	
+- Screen shots for app stores (i create a few that will work but since apple hasnot approved the app yet maybe we wan these perfect for apple (android and BB worked)
+- 1.)	Screenshots for 4-inch iPhone 5 and iPod touch (5th generation) Retina display must be 1136x640, 1136x600, 640x1136 or 640x1096 pixels, at least 72 DPI, in the RGB color space, and in the JPG or PNG format.
+- 2.)	Screenshots for 3.5-inch iPhone and iPod touch Retina display must be 960x640, 960x600, 640x960 or 640x920 pixels, at least 72 DPI, in the RGB color space, and in the JPG or PNG format.
+- 3.)	iPad Screenshots must be .jpeg, .jpg, .tif, .tiff, or .png file that is 1024x768, 1024x748, 768x1024, 768x1004, 2048x1536, 2048x1496, 1536x2048 or 1536x2008 pixels, at least 72 DPI, and in the RGB color space.
 
-	Windows store?  cost extra $49 is it worth it?
+- Windows store?  cost extra $49 is it worth it?
 
 
 ### Cleanup ###
