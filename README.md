@@ -44,7 +44,7 @@ Update Pages: Program Guide
 - needs links to Bios pages possibly links to the event/bio of the event
 - add separators rows, or colour rows maybe days, breaks dinner etc
 - maybe colour cordinate the track rows green blue orange?
-- Table does not fit 100% width of the screen
+- ~~Table does not fit 100% width of the screen~~
 - ~~Spelling of management is wrong at 9:30 on wend~~
 - ~~Missing all 3:30- 4:30 events on Wendnesday~~
 - need to confirm event from updated content
