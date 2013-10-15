@@ -133,8 +133,10 @@ table.guide {
 	
 
 
-/* Bus schedule reflow break-point */
+/* styles for larger screens */
 @media ( min-width: 25em ) {
+	
+	/* Bus schedule reflow break-point */
 	/* Show the table header rows and set all cells to display: table-cell */ 
 	.bustable td,
 	.bustable th,
