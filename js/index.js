@@ -104,16 +104,19 @@
 		$('#' + $.mobile.activePage.attr('id')).find('#panelmenu').find('a.' + $.mobile.activePage.attr('id')).addClass('ui-btn-active');
 		
 		// Background fade-in to fix "cover" glitch
+		/*
 		$('.ui-panel-content-wrap').fadeIn('slow');
 		$('.ui-page').fadeIn('fast').css('background-image','url(../img/beachbg.jpg)');
+		*/
 	});
 	
 	// Background hide before fade-in to fix "cover" glitch
+	/*
 	$(document).on('pageinit', function() {
 		$('.ui-panel-content-wrap').hide();
 		$('.ui-page').css('background-image', 'none');
 	});
-	
+	*/
 	
 	$(document).delegate("#page-weather", "pagebeforeshow", function() {
 		$.simpleWeather({
