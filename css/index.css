@@ -150,4 +150,8 @@ table.guide {
 	.bustable th .ui-table-cell-label { 
 		display: none;
 	}
+	
+	table.guide {
+		width: 100%;
+		}
 }
