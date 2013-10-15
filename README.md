@@ -25,7 +25,8 @@ To keep testing time down and deployment testing down please use a little phoneg
 New Page: Transportation 
 - ~~pagetransportation.html~~  
 - ~~Bus Schedule - update from email of files~~
-- Taxi - update from email from Joann and Fred
+- ~~Taxi - update from email from Joann and Fred~~
+- Confirm Taxi's with Joann
 
 	
 ### Priority 4  
@@ -38,12 +39,12 @@ New Pages: Bio’s
 	
 ### Priority 2  
 Update Pages: Program Guide
-- needs better formatting to see more clearly days and events it's hard to see
-- needs formated location info and event description on each event, possibly on new lines?
+- ~~needs better formatting to see more clearly days and events it's hard to see~~
+- ~~needs formated location info and event description on each event, possibly on new lines?~~
 - ~~ provide easy way to see location ~~
 - needs links to Bios pages possibly links to the event/bio of the event
-- add separators rows, or colour rows maybe days, breaks dinner etc
-- maybe colour cordinate the track rows green blue orange?
+- ~~add separators rows, or colour rows maybe days, breaks dinner etc~~
+- ~~maybe colour cordinate the track rows green blue orange?~~
 - ~~Table does not fit 100% width of the screen~~
 - ~~Spelling of management is wrong at 9:30 on wend~~
 - ~~Missing all 3:30- 4:30 events on Wendnesday~~
@@ -57,11 +58,11 @@ Update Pages: Floor Plan
 	
 ### Priority 3 
 Update Pages: about 
-	Need MISA Logo
-	Web Link to http://www.misa-asim.ca/
+	~~Need MISA Logo~~
+	~~Web Link to http://www.misa-asim.ca/~~
 	Need Chatham-Kent Logo
 	Need Chatham-Kent description
-	Need Chatham-Kenb Link
+	~~Need Chatham-Kent Link~~
 
 	
 ### Priority Low 
