@@ -41,7 +41,7 @@ New Pages: pagebio.html, pageRandyHope.html etc
 Update Pages: Program Guide
 - ~~needs better formatting to see more clearly days and events it's hard to see~~
 - ~~needs formated location info and event description on each event, possibly on new lines?~~
-- ~~ provide easy way to see location ~~
+- ~~provide easy way to see location~~
 - ~~needs links to Bios pages possibly links to the event/bio of the event~~
 - ~~add separators rows, or colour rows maybe days, breaks dinner etc~~
 - ~~maybe colour cordinate the track rows green blue orange?~~
@@ -58,11 +58,11 @@ Update Pages: Floor Plan
 	
 ### Priority 3 
 Update Pages: about 
-	~~Need MISA Logo~~
-	~~Web Link to http://www.misa-asim.ca/~~
-	Need Chatham-Kent Logo
-	Need Chatham-Kent description
-	~~Need Chatham-Kent Link~~
+- ~~Need MISA Logo~~
+- ~~Web Link to http://www.misa-asim.ca/~~
+- Need Chatham-Kent Logo
+- Need Chatham-Kent description
+- ~~Need Chatham-Kent Link~~
 
 	
 ### Priority Low 
