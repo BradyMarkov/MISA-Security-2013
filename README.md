@@ -30,11 +30,11 @@ New Page: Transportation
 
 	
 ### Priority 4  
-New Pages: Bio’s
-- Need pages with Bio’s
-- Page that lists all Bios and links to them?
-- Mayor, CAO, Helen, and all Speakers
-- Possibly speakers bio’s could double as the event description in the program guide (below)
+New Pages: pagebio.html, pageRandyHope.html etc
+- ~~Need pages with Bio’s~~
+- ~~Page that lists all Bios and links to them?~~
+- ~~Mayor, CAO, Helen, and all Speakers~~
+- Need to Update Content to Include the Content
 
 	
 ### Priority 2  
@@ -42,7 +42,7 @@ Update Pages: Program Guide
 - ~~needs better formatting to see more clearly days and events it's hard to see~~
 - ~~needs formated location info and event description on each event, possibly on new lines?~~
 - ~~ provide easy way to see location ~~
-- needs links to Bios pages possibly links to the event/bio of the event
+- ~~needs links to Bios pages possibly links to the event/bio of the event~~
 - ~~add separators rows, or colour rows maybe days, breaks dinner etc~~
 - ~~maybe colour cordinate the track rows green blue orange?~~
 - ~~Table does not fit 100% width of the screen~~
@@ -79,7 +79,7 @@ Bugs Fixes
 ### Other ### 
 - ~~Update phone number to new DID (226) 312-2065 done~~
 - ~~Update Email to MISA email address Misa2013@chatham-kent.ca done~~
-- changing the page effect to slide or something else - got comments/ feedback sayin it's awkward
+- ~~changing the page effect to slide or something else - got comments/ feedback sayin it's awkward~~
 - Missing recommended icon file - The bundle does not contain an app icon for iPhone / iPod Touch of exactly '120x120' pixels, in .png format. 
 - Missing recommended icon file - The bundle does not contain an app icon for iPad of exactly '76x76' pixels, in .png format. 
 - Missing recommended icon file - The bundle does not contain an app icon for iPad of exactly '152x152' pixels, in .png format. 
@@ -102,7 +102,7 @@ Bugs Fixes
 - 2.)	Screenshots for 3.5-inch iPhone and iPod touch Retina display must be 960x640, 960x600, 640x960 or 640x920 pixels, at least 72 DPI, in the RGB color space, and in the JPG or PNG format.
 - 3.)	iPad Screenshots must be .jpeg, .jpg, .tif, .tiff, or .png file that is 1024x768, 1024x748, 768x1024, 768x1004, 2048x1536, 2048x1496, 1536x2048 or 1536x2008 pixels, at least 72 DPI, and in the RGB color space.
 
-- Windows store?  cost extra $49 is it worth it?
+
 
 
 ### Cleanup ###
@@ -142,7 +142,7 @@ Bugs Fixes
 - ~~floor plan~~
 - ~~about MISA~~
 - ~~help~~
-- speaker BIO's
+- ~~speaker BIO's~~
 - sponsor links/listing
 - additional news feeds
 - treasure map POIs
