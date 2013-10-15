@@ -76,31 +76,31 @@ Bugs Fixes
 - - Tokyo Sushi,  Chatham, ON N7M 1N9 - One Red marker
 - - Tokyo Sushi, 150 Richmond St, Chatham, ON N7M 1N9 -two markers green and red
 	
-### Other ### 
+### Other ###
 - ~~Update phone number to new DID (226) 312-2065 done~~
 - ~~Update Email to MISA email address Misa2013@chatham-kent.ca done~~
 - ~~changing the page effect to slide or something else - got comments/ feedback sayin it's awkward~~
-- Missing recommended icon file - The bundle does not contain an app icon for iPhone / iPod Touch of exactly '120x120' pixels, in .png format. 
-- Missing recommended icon file - The bundle does not contain an app icon for iPad of exactly '76x76' pixels, in .png format. 
-- Missing recommended icon file - The bundle does not contain an app icon for iPad of exactly '152x152' pixels, in .png format. 
+- (ADDED) ~~Missing recommended icon file - The bundle does not contain an app icon for iPhone / iPod Touch of exactly '120x120' pixels, in .png format.~~ 
+- (ADDED) ~~Missing recommended icon file - The bundle does not contain an app icon for iPad of exactly '76x76' pixels, in .png format. ~~
+- (ADDED) ~~Missing recommended icon file - The bundle does not contain an app icon for iPad of exactly '152x152' pixels, in .png format.~~ 
 
 
-### Cleanup ### 
+### Cleanup ###
 - Remove all non needed Files and JS to make it faster...
 
 
-### Spell Check ### 
+### Spell Check ###
 - Teri will Spellcheck website on Tuesday
 
 - Need signoff on Tues/Wendnesday
 		
 
 
-### App Stores ### 	
-- Screen shots for app stores (i create a few that will work but since apple hasnot approved the app yet maybe we wan these perfect for apple (android and BB worked)
-- 1.)	Screenshots for 4-inch iPhone 5 and iPod touch (5th generation) Retina display must be 1136x640, 1136x600, 640x1136 or 640x1096 pixels, at least 72 DPI, in the RGB color space, and in the JPG or PNG format.
-- 2.)	Screenshots for 3.5-inch iPhone and iPod touch Retina display must be 960x640, 960x600, 640x960 or 640x920 pixels, at least 72 DPI, in the RGB color space, and in the JPG or PNG format.
-- 3.)	iPad Screenshots must be .jpeg, .jpg, .tif, .tiff, or .png file that is 1024x768, 1024x748, 768x1024, 768x1004, 2048x1536, 2048x1496, 1536x2048 or 1536x2008 pixels, at least 72 DPI, and in the RGB color space.
+### App Stores ###
+- ~~Screen shots for app stores (i create a few that will work but since apple hasnot approved the app yet maybe we want these perfect for apple (android and BB worked)~~
+- ~~1.)	Screenshots for 4-inch iPhone 5 and iPod touch (5th generation) Retina display must be 1136x640, 1136x600, 640x1136 or 640x1096 pixels, at least 72 DPI, in the RGB color space, and in the JPG or PNG format.~~
+- ~~2.)	Screenshots for 3.5-inch iPhone and iPod touch Retina display must be 960x640, 960x600, 640x960 or 640x920 pixels, at least 72 DPI, in the RGB color space, and in the JPG or PNG format.~~
+- ~~3.)	iPad Screenshots must be .jpeg, .jpg, .tif, .tiff, or .png file that is 1024x768, 1024x748, 768x1024, 768x1004, 2048x1536, 2048x1496, 1536x2048 or 1536x2008 pixels, at least 72 DPI, and in the RGB color space.~~
 
 
 
