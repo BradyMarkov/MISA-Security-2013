@@ -105,7 +105,7 @@
 		
 		// Background fade-in to fix "cover" glitch
 		$('.ui-panel-content-wrap').fadeIn('slow');
-		$('.ui-page').delay(500).fadeIn('slow').css('background-image','url(../img/beachbg.jpg)');
+		$('.ui-page').fadeIn('fast').css('background-image','url(../img/beachbg.jpg)');
 	});
 	
 	// Background hide before fade-in to fix "cover" glitch

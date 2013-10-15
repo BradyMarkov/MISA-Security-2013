@@ -88,27 +88,34 @@ img.full-responsive {
 #trackselect legend {
 	margin: 0 auto;
 	}
-table#guide {
+table.guide {
 	border-spacing:0;
     border-collapse:collapse;
+	/*font-size: 0.9em;*/
 	}
-#guide td {
+.guide .ui-btn-text {
+	font-size: 12px !important;
+	}
+.guide td {
 	padding: 5px;
 	}
-#guide .track2,
-#guide .track3 {
+.guide .track2,
+.guide .track3 {
 	display: none;
 	}
-#guide .time {
+.guide .time {
 	white-space: nowrap;
 	font-size: 0.75em;
 	}
-#guide .track1,
-#guide .track2,
-#guide .track3 {
+.guide .track1,
+.guide .track2,
+.guide .track3 {
 	font-size: 0.9em;
 	}
-
+.guide .track {
+	background-color:#B0C4DE !important;
+	}
+	
 /*
 #floorplan {
 	position: absolute;
@@ -124,10 +131,7 @@ table#guide {
 	margin-top: 0 !important;
 	}
 	
-#guide .track {
-	background-color:#B0C4DE !important;
 
-}
 
 /* Bus schedule reflow break-point */
 @media ( min-width: 25em ) {
