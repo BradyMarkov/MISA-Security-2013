@@ -23,8 +23,8 @@ To keep testing time down and deployment testing down please use a little phoneg
 
 ### Priority 1 
 New Page: Transportation 
-- pagetransportation.html  
-- Bus Schedule - update from email of files
+- ~~pagetransportation.html~~  
+- ~~Bus Schedule - update from email of files~~
 - Taxi - update from email from Joann and Fred
 
 	
@@ -45,8 +45,8 @@ Update Pages: Program Guide
 - add separators rows, or colour rows maybe days, breaks dinner etc
 - maybe colour cordinate the track rows green blue orange?
 - Table does not fit 100% width of the screen
-- Spelling of management is wrong at 9:30 on wend
-- Missing all 3:30- 4:30 events on Wendnesday
+- ~~Spelling of management is wrong at 9:30 on wend~~
+- ~~Missing all 3:30- 4:30 events on Wendnesday~~
 - need to confirm event from updated content
 
 	
