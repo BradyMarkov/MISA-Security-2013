@@ -123,7 +123,8 @@ table#guide {
 .places .ui-li-heading {
 	margin-top: 0 !important;
 	}
-.track{
-	background-color:#B0C4DE;
+	
+#guide.track {
+	background-color:#B0C4DE !important;
 
 }
