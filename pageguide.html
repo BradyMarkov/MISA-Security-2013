@@ -17,7 +17,7 @@
 
 		<div data-role="content">
 
-			<table id="guide" class="table-stroke table-stripe" width="95%">
+			<table id="guide" class="table-stroke table-stripe" width="100%">
 				<tbody>
 					<tr>
 						<td colspan="2">
@@ -61,8 +61,7 @@
 						<td colspan="2" class="time text-center">
 							<b>Concurrent Sessions</b><br>
 							<fieldset id="trackselect" data-role="controlgroup" data-type="horizontal" data-mini="true" class="text-center">
-								<legend>Choose a track:</legend>
-								<input checked="checked" id="r_general" name="track" value="general" type="radio">
+								<input id="r_general" name="track" value="general" type="radio">
 								<label for="r_general">
 									General
 								</label>
@@ -74,7 +73,7 @@
 								<label for="r_management">
 									Management
 								</label>
-							</fieldset>
+							<!--</fieldset>-->
 						</td>
 					</tr>
 					<tr>
@@ -101,7 +100,21 @@
 					</tr>
 					<tr>
 						<td colspan="2" class="time text-center">
-							<b>Concurrent Sessions</b>
+							<b>Concurrent Sessions</b><br>
+							<!--<fieldset id="trackselect" data-role="controlgroup" data-type="horizontal" data-mini="true" class="text-center">-->
+								<input id="r_general" name="track" value="general" type="radio">
+								<label for="r_general">
+									General
+								</label>
+								<input id="r_technical" name="track" value="technical" type="radio">
+								<label for="r_technical">
+									Technical
+								</label>
+								<input id="r_management" name="track" value="management" type="radio">
+								<label for="r_management">
+									Management
+								</label>
+							<!--</fieldset>-->
 						</td>
 					</tr>
 					<tr>
@@ -125,6 +138,25 @@
 							<span class="track1">Break and Tradeshow</span>
 							<span class="track2">Break and Tradeshow</span>
 							<span class="track3">&nbsp;</span>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2" class="time text-center">
+							<b>Concurrent Sessions</b><br>
+							<!--<fieldset id="trackselect" data-role="controlgroup" data-type="horizontal" data-mini="true" class="text-center">-->
+								<input id="r_general" name="track" value="general" type="radio">
+								<label for="r_general">
+									General
+								</label>
+								<input id="r_technical" name="track" value="technical" type="radio">
+								<label for="r_technical">
+									Technical
+								</label>
+								<input id="r_management" name="track" value="management" type="radio">
+								<label for="r_management">
+									Management
+								</label>
+							<!--</fieldset>-->
 						</td>
 					</tr>
 					<tr>
@@ -213,7 +245,7 @@
 		</div>
 		
 		<div data-role="footer" data-position="fixed">
-				<fieldset id="trackselect" data-role="controlgroup" data-type="horizontal" data-mini="true" class="text-center">
+				<!--<fieldset id="trackselect" data-role="controlgroup" data-type="horizontal" data-mini="true" class="text-center">-->
 					<legend>Choose a track:</legend>
 					<input checked="checked" id="r_general" name="track" value="general" type="radio">
 					<label for="r_general">
