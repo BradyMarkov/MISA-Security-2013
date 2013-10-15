@@ -40,7 +40,7 @@ New Pages: Bio’s
 Update Pages: Program Guide
 - needs better formatting to see more clearly days and events it's hard to see
 - needs formated location info and event description on each event, possibly on new lines?
-- - provide easy way to see location 
+- ~~ provide easy way to see location ~~
 - needs links to Bios pages possibly links to the event/bio of the event
 - add separators rows, or colour rows maybe days, breaks dinner etc
 - maybe colour cordinate the track rows green blue orange?
@@ -52,7 +52,7 @@ Update Pages: Program Guide
 	
 ### Priority 2 
 Update Pages: Floor Plan  
-- New image with changes and more detail..on it in email
+- ~~New image with changes and more detail..on it in email~~
 	
 	
 ### Priority 3 
