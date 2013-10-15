@@ -81,7 +81,7 @@ Bugs Fixes
 - ~~Update Email to MISA email address Misa2013@chatham-kent.ca done~~
 - ~~changing the page effect to slide or something else - got comments/ feedback sayin it's awkward~~
 - (ADDED) ~~Missing recommended icon file - The bundle does not contain an app icon for iPhone / iPod Touch of exactly '120x120' pixels, in .png format.~~ 
-- (ADDED) ~~Missing recommended icon file - The bundle does not contain an app icon for iPad of exactly '76x76' pixels, in .png format. ~~
+- (ADDED) ~~Missing recommended icon file - The bundle does not contain an app icon for iPad of exactly '76x76' pixels, in .png format.~~
 - (ADDED) ~~Missing recommended icon file - The bundle does not contain an app icon for iPad of exactly '152x152' pixels, in .png format.~~ 
 
 
