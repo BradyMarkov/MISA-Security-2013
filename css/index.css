@@ -128,3 +128,22 @@ table#guide {
 	background-color:#B0C4DE !important;
 
 }
+
+/* Bus schedule reflow break-point */
+@media ( min-width: 25em ) {
+	/* Show the table header rows and set all cells to display: table-cell */ 
+	.bustable td,
+	.bustable th,
+	.bustable tbody th,
+	.bustable tbody td,
+	.bustable thead td,
+	.bustable thead th {
+		display: table-cell;
+		margin: 0;
+	}
+	/* Hide the labels in each cell */ 
+	.bustable td .ui-table-cell-label,
+	.bustable th .ui-table-cell-label { 
+		display: none;
+	}
+}

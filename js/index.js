@@ -45,10 +45,10 @@
 	
 	// disable collapse for disable-collapse
 	$(function(){
-	$('.disable-collapse h3 a').on('click', function() {
-		return false;
-		console.log('clicked');
-		});
+		$('.disable-collapse h3 a').on('click', function() {
+			return false;
+			console.log('clicked');
+			});
 	});
 
 	// Wait for device API libraries to load
@@ -102,6 +102,14 @@
 	$(document).on('pageshow', function() {
 		$('.page-home').removeClass('ui-btn-active');
 		$('#' + $.mobile.activePage.attr('id')).find('#panelmenu').find('a.' + $.mobile.activePage.attr('id')).addClass('ui-btn-active');
+		
+		// Background fade-in to fix "cover" glitch
+		$('.ui-panel-content-wrap').fadeIn('slow');
+	});
+	
+	// Background hide before fade-in to fix "cover" glitch
+	$(document).on('pageinit', function() {
+		$('.ui-panel-content-wrap').hide();
 	});
 	
 	
