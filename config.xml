@@ -12,6 +12,10 @@
             href="http://www.chatham-kent.ca"
             email = "matthew@mrpayne.ca">Municipality of Chatham-Kent</author>
 	<content src="index.html"/>
+	
+	<!-- added to specify no additional device permissions are required upon installation -->
+	<preference name="permissions" value="none"/>
+	
     <icon src="res/icon/blackberry/icon80.png" />
     <icon src="res/icon/android/icon36ldpi.png"   gap:platform="android"    gap:density="ldpi" />
     <icon src="res/icon/android/icon48mdpi.png"   gap:platform="android"    gap:density="mdpi" />
