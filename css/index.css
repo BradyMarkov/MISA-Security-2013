@@ -118,7 +118,8 @@ table.guide {
 .guide .track3 {
 	font-size: 0.9em;
 	}
-.guide .track {
+.guide .track,
+.guide .track td {
 	background-color:#B0C4DE !important;
 	}
 	
