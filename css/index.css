@@ -133,7 +133,8 @@ table.guide {
 	-webkit-transform:translate3d(0,0,0);
 	}
 .floorplan {
-	width: 100%;
+	min-width: 100%;
+	height: auto;
 	}
 	
 .places .ui-li-heading {
