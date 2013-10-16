@@ -207,15 +207,15 @@
 			}
 	});
 	
+	/*
 	var floorscroll;
 	$(document).delegate("#page-floorplan", "pageshow", function() {
-		/*
 		$(function(){
 			floorscroll = new iScroll('floorplan',
 				{ zoom:true, zoomMax: 4 });
 			});
-			*/
 	});
+	*/
 	
 	function gmap(address) {
 		// KK: encodes address and opens in external browser window or native app
