@@ -168,3 +168,19 @@ table.guide {
 		width: 100%;
 		}
 }
+
+@media ( min-width: 34em ) {
+
+	.weather-forecast {
+		text-align: left;
+		width: 50%;
+		padding-left: 50%;
+		font-size: 1.5em;
+		}
+	img.weather-image {
+		right: 50%;
+		left: inherit;
+		padding-top: 25px;
+		}	
+	
+}
