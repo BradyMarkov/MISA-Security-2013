@@ -210,12 +210,21 @@
 	/*
 	var floorscroll;
 	$(document).delegate("#page-floorplan", "pageshow", function() {
+		
 		$(function(){
 			floorscroll = new iScroll('floorplan',
 				{ zoom:true, zoomMax: 4 });
 			});
+			
 	});
 	*/
+	$(document).delegate("#page-floorplan", "pageshow", function() {
+		$('#fp-help').popup('open');
+		window.setTimeout(function(){
+			$('#fp-help').popup('close');
+		}, 3000);
+		$('.fp-container').iscrollview("refresh");
+	});
 	
 	function gmap(address) {
 		// KK: encodes address and opens in external browser window or native app

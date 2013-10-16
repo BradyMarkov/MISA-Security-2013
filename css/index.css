@@ -134,6 +134,10 @@ table.guide {
 	}
 .floorplan {
 	width: 100%;
+	/*
+	width: 80%;
+	padding: 10%;
+	*/
 	}
 	
 .places .ui-li-heading {
