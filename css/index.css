@@ -171,16 +171,24 @@ table.guide {
 
 @media ( min-width: 34em ) {
 
+	.weather-today {
+		padding-bottom: 20px;
+		}
 	.weather-forecast {
 		text-align: left;
 		width: 50%;
 		padding-left: 50%;
 		font-size: 1.5em;
 		}
-	img.weather-image {
+	.weather-image {
 		right: 50%;
 		left: inherit;
 		padding-top: 25px;
-		}	
-	
+		}
+	.weather-extended {
+		font-size: 1.4em;
+		}
+	.weather-extended .value {
+		padding-bottom: 50px;
+		}
 }
