@@ -103,6 +103,9 @@ table.guide {
 .guide .track3 {
 	display: none;
 	}
+.guide tr.track1 {
+	display: table-row;
+	}
 .guide .time {
 	white-space: nowrap;
 	font-size: 0.75em;
