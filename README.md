@@ -34,7 +34,7 @@ New Pages: pagebio.html, pageRandyHope.html etc
 - ~~Need pages with Bio’s~~
 - ~~Page that lists all Bios and links to them?~~
 - ~~Mayor, CAO, Helen, and all Speakers~~
-- Need to Update Content to Include the Content
+- ~~Need to Update Content to Include the Content~~
 
 	
 ### Priority 2  
@@ -68,10 +68,10 @@ Update Pages: about
 ### Priority Low 
 Bugs Fixes 
 - Zoom on Map does not work on android
-- Header is not fixed to the top of the page in everypage but scrolls away, this produces issues in some devices for navigation
-- Misa Security 2013 title doesnot fit on most devices can we shorten it
-- Sometime th zoom on the floor plan takes over the whole viewpane makeing it imposssile to go back or hit menu as it disapears
-- mapp links include the street address which places two markers a green marker and a red marker - confusing the user who thinks those are directions
+- (FIXED) ~~Header is not fixed to the top of the page in everypage but scrolls away, this produces issues in some devices for navigation~~
+- (FIXED) ~~Misa Security 2013 title doesnot fit on most devices can we shorten it~~
+- Sometime the zoom on the floor plan takes over the whole viewpane makeing it imposssile to go back or hit menu as it disapears
+- map links include the street address which places two markers a green marker and a red marker - confusing the user who thinks those are directions
 - - (it google adding the actual steet address but finding the resturant if the street address is remove it fixes it
 - - Tokyo Sushi,  Chatham, ON N7M 1N9 - One Red marker
 - - Tokyo Sushi, 150 Richmond St, Chatham, ON N7M 1N9 -two markers green and red
