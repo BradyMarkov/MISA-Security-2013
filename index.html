@@ -4,10 +4,13 @@
 <head>
 
 	<!-- KK: added user-scaleable=1 to enable zooming -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+	<!--<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">-->
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-	<!-- Chrome mobile full-screen mode -->
+	<!-- Chrome/Apple mobile full-screen mode -->
 	<meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
 	
 	<title>MISA 2013</title>
 	
@@ -30,14 +33,15 @@
 		
 	<!--MP -Created appload.js to store commom js to call on other pages-->
 	<script src="js/index.js"></script>
-
-	<!-- KK: zoom plugin -->
-	<script src="js/iscroll.js"></script>
 	
 	<!-- KK: moved to after init scripts so that "mobileinit" will bind
 		properly without having to defer manually -->
 	<script src="js/jquery.mobile1.3.2.min.js"></script>  
 
+	<!-- KK: zoom plugin -->
+	<script src="js/iscroll.js"></script>
+    <script src="js/jquery.mobile.iscrollview.js"></script>
+	
 	<!-- KK: required for Phonegap Build API access -->
 	<!--<script src="phonegap.js"></script>-->
 	
