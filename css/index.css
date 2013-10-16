@@ -133,8 +133,16 @@ table.guide {
 .places .ui-li-heading {
 	margin-top: 0 !important;
 	}
-	
 
+.speaker-info {
+	font-weight: 600;
+	font-size: 1.1em;
+	}
+.speaker-info .date {
+	font-weight: 400;
+	font-size: 0.9em;
+	font-style: italic;
+	}
 
 /* styles for larger screens */
 @media ( min-width: 25em ) {
