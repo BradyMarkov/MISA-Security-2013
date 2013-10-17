@@ -14,6 +14,15 @@
 	/*margin: .6em 15% .8em;*/
 }
 
+.welcome-msg {
+	bottom: 15px;
+	position:absolute !important;
+	/*top: auto !important;*/
+	left: 50%;
+	margin-left: -45%;
+	width: 90% !important;
+	}
+
 .weather-image {
 	position: absolute;
 	z-index: -99;
@@ -112,12 +121,13 @@ table.guide {
 	}
 .guide .time {
 	white-space: nowrap;
-	font-size: 0.75em;
+	font-size: 11px;
 	}
+.guide p,
 .guide .track1,
 .guide .track2,
 .guide .track3 {
-	font-size: 0.9em;
+	font-size: 12px;
 	}
 .guide .track,
 .guide .track td {
