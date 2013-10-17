@@ -32,5 +32,7 @@
     <icon src="res/icon/ios/icon152.png"         gap:platform="ios"        width="152" height="152" />
 	<access uri="*" />
 	<access uri="http://misa2013.chatham-kent.ca" subdomain="true"/>
+	<access origin="*" subdomains="true"/>
+	<access origin="http://player.vimeo.com" subdomains="true"/>
 	
 </widget>
