@@ -92,9 +92,10 @@ img.full-responsive {
 	margin: 0 auto;
 	}
 table.guide {
-	border-spacing:0;
-    border-collapse:collapse;
+	border-spacing: 0;
+	border-collapse: collapse;
 	/*font-size: 0.9em;*/
+	width: 100%;
 	}
 .guide .ui-btn-text {
 	font-size: 12px !important;
