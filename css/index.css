@@ -75,17 +75,22 @@ img.full-responsive {
 	}
 	
 .ui-page {
-	background: url(../img/beachbg.jpg);
+	background-image: url(../img/beachbg-cover.jpg);
 	background-repeat: no-repeat;
 	/*background-position: fixed;*/
 	background-size: cover;
 	background-position: center center;
+	background-color: #fff;
 }
+#page-home {
+	background-image: url(../img/beachbg.jpg) !important;
+	}
 .ui-panel-content-wrap.ui-body-b {
 	background: transparent !important;
 }
 .ui-panel-content-wrap.ui-body-c {
-	background: rgba(255,255,255,0.75) !important;
+	/*background: rgba(255,255,255,0.75) !important;*/
+	background: transparent !important;
 }
 #panelmenu {
 	background-image: url(../img/leatherbg.jpg);
