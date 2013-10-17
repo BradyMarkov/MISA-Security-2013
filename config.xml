@@ -30,8 +30,10 @@
     <icon src="res/icon/ios/icon76.png"         gap:platform="ios"        width="76" height="76" />
     <icon src="res/icon/ios/icon120.png"         gap:platform="ios"        width="120" height="120" />
     <icon src="res/icon/ios/icon152.png"         gap:platform="ios"        width="152" height="152" />
+	
 	<access uri="*" />
 	<access uri="http://misa2013.chatham-kent.ca" subdomain="true"/>
+	<access uri="http://player.vimeo.com" subdomains="true"/>
 	<access origin="*" subdomains="true"/>
 	<access origin="http://player.vimeo.com" subdomains="true"/>
 	
