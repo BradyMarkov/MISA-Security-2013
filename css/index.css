@@ -77,7 +77,7 @@ img.full-responsive {
 .ui-page {
 	background-image: url(../img/beachbg-cover.jpg);
 	background-repeat: no-repeat;
-	/*background-position: fixed;*/
+	/*background-attachment: fixed;*/
 	background-size: cover;
 	background-position: center center;
 	background-color: #fff;
