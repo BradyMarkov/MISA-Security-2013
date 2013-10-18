@@ -15,6 +15,7 @@
 	
 	<!-- added to specify no additional device permissions are required upon installation -->
 	<preference name="permissions" value="none"/>
+	<preference name="phonegap-version" value="3.0.0" /> 
 	
     <icon src="res/icon/blackberry/icon80.png" />
     <icon src="res/icon/android/icon36ldpi.png"   gap:platform="android"    gap:density="ldpi" />
